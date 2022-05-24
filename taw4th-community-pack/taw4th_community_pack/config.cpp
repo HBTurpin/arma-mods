@@ -17,7 +17,7 @@ class CfgPatches
 			
 		};
 	};
-	author="TAW 4th Platoon";
+	author="TAW";
 };
 class CfgFactionClasses 
 {
@@ -85,7 +85,7 @@ class CfgWeapons
 	
 	class TAW_4th_Platoon_Equipment_Trooper_NVG: lsd_gar_standard_nvg
 	{
-		author="Vanir";
+		author="TAW";
 		displayName="Clone visor (4th)";
 		hiddenSelectionsTextures[]=
 		{
@@ -94,7 +94,7 @@ class CfgWeapons
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
 	{
-		author="TAW 4th Platoon";
+		author="TAW";
 		displayName="Clone trooper P2 helmet (4th)";
 		hiddenSelectionsTextures[]=
 		{
@@ -103,7 +103,7 @@ class CfgWeapons
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Vest: SWLB_clone_recon_armor
 	{
-		author="TAW 4th Platoon";
+		author="TAW";
         displayName = "Clone trooper recon vest (4th)";
 		hiddenSelectionsTextures[]=
 		{
@@ -114,7 +114,7 @@ class CfgWeapons
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Uniform: SWLB_clone_uniform
 	{
-	   author="TAW 4th Platoon";
+	   author="TAW";
 		displayName="Clone trooper armor (4th)";
 		class ItemInfo: UniformItem
 		{
@@ -169,7 +169,7 @@ class CfgVehicles
 
 	class TAW_4th_Platoon_Equipment_Backpack: SWLB_clone_backpack
 	{
-		author="TAW 4th Platoon";
+		author="TAW";
 		displayName="Clone trooper backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
@@ -179,7 +179,7 @@ class CfgVehicles
 	};
 	class TAW_4th_Platoon_Equipment_Trooper: SWLB_clone_base_P2
 	{
-		author="TAW 4th Platoon";
+		author="TAW";
 		displayName="Clone Trooper";
 		faction="TAW_4th_Platoon_Equipment_Faction_Main";
 		editorSubcategory="TAW_4th_Platoon_Equipment_Faction_Sub";

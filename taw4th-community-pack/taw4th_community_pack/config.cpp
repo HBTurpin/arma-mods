@@ -199,8 +199,8 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"TAW_4th_Platoon_Equipment_Trooper_NVG",
-			"405th_SW_Equipment_Trooper_Helmet",
-			"405th_SW_Equipment_Trooper_Vest",
+			"TAW_4th_Platoon_Equipment_Trooper_Helmet",
+			"TAW_4th_Platoon_Equipment_Trooper_Vest",
 		};
 	};
 };

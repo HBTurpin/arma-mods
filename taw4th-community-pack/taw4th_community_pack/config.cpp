@@ -86,8 +86,6 @@ class CfgWeapons
 	class Vest_Camo_Base;
 	class lsd_gar_standard_nvg;
 	
-	
-	
 	//BASE STANDARD
 	class TAW4th_Equipment_Trooper_NVG: lsd_gar_standard_nvg
 	{
@@ -95,7 +93,7 @@ class CfgWeapons
 		displayName="Clone Visor (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_NVG_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_NVG_Co.paa",
 		};
 	};
 	class TAW4th_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
@@ -104,7 +102,7 @@ class CfgWeapons
 		displayName="Clone Trooper P2 Helmet (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Helmet_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Co.paa",
 		};
 	};
 	class TAW4th_Equipment_Trooper_Vest: SWLB_clone_recon_armor
@@ -113,9 +111,9 @@ class CfgWeapons
         displayName = "Clone Trooper Recon Vest (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Co.paa",
 			"",
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Co.paa",
 		};
 	};
 	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_uniform
@@ -132,10 +130,6 @@ class CfgWeapons
 		};
 	};
 	
-	
-	
-	
-	
 	// CUSTOM HELMETS
 	class TAW4th_Equipment_Trooper_Helmet_C_Almerra: SWLB_clone_P2_helmet
 	{
@@ -143,7 +137,7 @@ class CfgWeapons
 		displayName="Clone Trooper P2 Helmet (4th) [Almerra]";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\customs\TAW_4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
+			"taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
 		};
 	};
 	class TAW4th_Equipment_Trooper_Helmet_C_Laffey: SWLB_clone_P2_helmet
@@ -207,11 +201,11 @@ class CfgVehicles
 	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
 	{
 		author="TAW";
-		displayName="Clone trooper backpack (4th)";
+		displayName="Clone Trooper Backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW4th_Equipment_Backpack_Co.paa",
-			"taw4th_community_pack\data\TAW4th_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
 		};
 	};
 	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
@@ -224,8 +218,8 @@ class CfgVehicles
 		uniformclass="TAW4th_Equipment_Trooper_Uniform";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Upper_Co.paa",
-			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Lower_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Co.paa",
 		};
 		linkedItems[]=
 		{

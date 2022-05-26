@@ -14,6 +14,8 @@ class CfgPatches
 			"TAW_4th_Platoon_Equipment_Trooper_Helmet",
 			"TAW_4th_Platoon_Equipment_Trooper_Vest",
 			"TAW_4th_Platoon_Equipment_Trooper_Uniform",
+			"TAW_4th_Platoon_Equipment_Almerra_Helmet",
+			"TAW_4th_Platoon_Equipment_Laffey_Helmet",
 			
 		};
 	};
@@ -89,7 +91,7 @@ class CfgWeapons
 		displayName="Clone visor (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_NVG_co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_NVG_co.paa",
 		};
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
@@ -98,7 +100,7 @@ class CfgWeapons
 		displayName="Clone trooper P2 helmet (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_Helmet_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Helmet_Co.paa",
 		};
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Vest: SWLB_clone_recon_armor
@@ -107,9 +109,9 @@ class CfgWeapons
         displayName = "Clone trooper recon vest (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
 			"",
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
 		};
 	};
 	class TAW_4th_Platoon_Equipment_Trooper_Uniform: SWLB_clone_uniform
@@ -123,6 +125,24 @@ class CfgWeapons
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
+		};
+	};
+	class TAW_4th_Platoon_Equipment_Almerra_Helmet: SWLB_clone_P2_helmet
+	{
+		author="TAW";
+		displayName="Almerra P2 helmet (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Almerra_Helmet_Co.paa",
+		};
+	};
+	class TAW_4th_Platoon_Equipment_Laffey_Helmet: SWLB_clone_P2_helmet
+	{
+		author="TAW";
+		displayName="Laffey P2 helmet (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Laffey_Helmet_Co.paa",
 		};
 	};
 };
@@ -173,8 +193,8 @@ class CfgVehicles
 		displayName="Clone trooper backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
 		};
 	};
 	class TAW_4th_Platoon_Equipment_Trooper: SWLB_clone_base_P2
@@ -187,8 +207,8 @@ class CfgVehicles
 		uniformclass="TAW_4th_Platoon_Equipment_Trooper_Uniform";
 		hiddenSelectionsTextures[]=
 		{
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_Upper_Co.paa",
-			"TAW_4th_Platoon_Equipment\data\TAW_4th_Platoon_Equipment_Trooper_Lower_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Upper_Co.paa",
+			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Lower_Co.paa",
 		};
 		linkedItems[]=
 		{

@@ -1,21 +1,22 @@
 class CfgPatches
 {
-	class TAW_4th_Platoon_Equipment
+	class TAW4th_Equipment
 	{
 		units[]=
 		{
-			"TAW_4th_Platoon_Equipment_Backpack",
-			"TAW_4th_Platoon_Equipment_Trooper",
+			"TAW4th_Equipment_Backpack",
+			"TAW4th_Equipment_Trooper",
 
 		};
 		weapons[]=
 		{
-			"TAW_4th_Platoon_Equipment_Trooper_NVG",
-			"TAW_4th_Platoon_Equipment_Trooper_Helmet",
-			"TAW_4th_Platoon_Equipment_Trooper_Vest",
-			"TAW_4th_Platoon_Equipment_Trooper_Uniform",
-			"TAW_4th_Platoon_Equipment_Almerra_Helmet",
-			"TAW_4th_Platoon_Equipment_Laffey_Helmet",
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_Uniform",
+			
+			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
+			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
 			
 		};
 	};
@@ -23,14 +24,14 @@ class CfgPatches
 };
 class CfgFactionClasses 
 {
-	class TAW_4th_Platoon_Equipment_Faction_Main
+	class TAW4th_Equipment_Faction_Main
 	{
 	displayName = "TAW 4th Platoon";
 	};
 };
 class CfgEditorSubcategories
 {
-	class TAW_4th_Platoon_Equipment_Faction_Sub
+	class TAW4th_Equipment_Faction_Sub
 	{
 		displayName="Infantry";
 	};
@@ -85,66 +86,82 @@ class CfgWeapons
 	class Vest_Camo_Base;
 	class lsd_gar_standard_nvg;
 	
-	class TAW_4th_Platoon_Equipment_Trooper_NVG: lsd_gar_standard_nvg
+	
+	
+	//BASE STANDARD
+	class TAW4th_Equipment_Trooper_NVG: lsd_gar_standard_nvg
 	{
 		author="TAW";
-		displayName="Clone visor (4th)";
+		displayName="Clone Visor (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_NVG_co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_NVG_Co.paa",
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
+	class TAW4th_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
 	{
 		author="TAW";
-		displayName="Clone trooper P2 helmet (4th)";
+		displayName="Clone Trooper P2 Helmet (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Helmet_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Helmet_Co.paa",
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Trooper_Vest: SWLB_clone_recon_armor
+	class TAW4th_Equipment_Trooper_Vest: SWLB_clone_recon_armor
 	{
 		author="TAW";
-        displayName = "Clone trooper recon vest (4th)";
+        displayName = "Clone Trooper Recon Vest (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Vest_Co.paa",
 			"",
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Vest_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Vest_Co.paa",
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Trooper_Uniform: SWLB_clone_uniform
+	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_uniform
 	{
 	   author="TAW";
-		displayName="Clone trooper armor (4th)";
+		displayName="Clone Trooper Armor (4th)";
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
-			uniformClass="TAW_4th_Platoon_Equipment_Trooper";
+			uniformClass="TAW4th_Equipment_Trooper";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Almerra_Helmet: SWLB_clone_P2_helmet
+	
+	
+	
+	
+	
+	// CUSTOM HELMETS
+	class TAW4th_Equipment_Trooper_Helmet_C_Almerra: SWLB_clone_P2_helmet
 	{
 		author="TAW";
-		displayName="Almerra P2 helmet (4th)";
+		displayName="Clone Trooper P2 Helmet (4th) [Almerra]";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Almerra_Helmet_Co.paa",
+			"taw4th_community_pack\data\customs\TAW_4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Laffey_Helmet: SWLB_clone_P2_helmet
+	class TAW4th_Equipment_Trooper_Helmet_C_Laffey: SWLB_clone_P2_helmet
 	{
 		author="TAW";
-		displayName="Laffey P2 helmet (4th)";
+		displayName="Clone Trooper P2 Helmet (4th) [Laffey]";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Laffey_Helmet_Co.paa",
+			"taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
 		};
 	};
+	
+	
+	
+	
+	
+	
+
 };
 class CfgVehicles
 {
@@ -187,40 +204,40 @@ class CfgVehicles
     class ls_carrybox_base;
 
 
-	class TAW_4th_Platoon_Equipment_Backpack: SWLB_clone_backpack
+	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
 	{
 		author="TAW";
 		displayName="Clone trooper backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Backpack_Co.paa",
 		};
 	};
-	class TAW_4th_Platoon_Equipment_Trooper: SWLB_clone_base_P2
+	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper";
-		faction="TAW_4th_Platoon_Equipment_Faction_Main";
-		editorSubcategory="TAW_4th_Platoon_Equipment_Faction_Sub";
-		backpack="TAW_4th_Platoon_Equipment_Backpack";
-		uniformclass="TAW_4th_Platoon_Equipment_Trooper_Uniform";
+		faction="TAW4th_Equipment_Faction_Main";
+		editorSubcategory="TAW4th_Equipment_Faction_Sub";
+		backpack="TAW4th_Equipment_Backpack";
+		uniformclass="TAW4th_Equipment_Trooper_Uniform";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Upper_Co.paa",
-			"taw4th_community_pack\data\TAW_4th_Platoon_Equipment_Trooper_Lower_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Upper_Co.paa",
+			"taw4th_community_pack\data\TAW4th_Equipment_Trooper_Lower_Co.paa",
 		};
 		linkedItems[]=
 		{
-			"TAW_4th_Platoon_Equipment_Trooper_NVG",
-			"TAW_4th_Platoon_Equipment_Trooper_Helmet",
-			"TAW_4th_Platoon_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
 		};
 		respawnLinkedItems[]=
 		{
-			"TAW_4th_Platoon_Equipment_Trooper_NVG",
-			"TAW_4th_Platoon_Equipment_Trooper_Helmet",
-			"TAW_4th_Platoon_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
 };

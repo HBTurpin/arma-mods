@@ -207,7 +207,7 @@ class CfgVehicles
 	class O_officer_F;
     class ls_carrybox_base;
 
-
+	// Backpacks
 	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
 	{
 		author="TAW";
@@ -218,6 +218,13 @@ class CfgVehicles
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
 		};
 	};
+	
+	
+	
+	
+	
+	
+	//Uniforms
 	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
 	{
 		author="TAW";
@@ -244,4 +251,35 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
+	
+	
+	class 3AS_BTLB_Bomber;
+	
+	
+	//Vehicles
+	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
+	{
+		displayName="BTL-Y Wing (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Equipment_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BTLB_Co.paa",
+			"3as\3as_btlb\data\detail_co.paa",
+			"3as\3as_btlb\data\interior_co.paa"
+		};
+	};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 };

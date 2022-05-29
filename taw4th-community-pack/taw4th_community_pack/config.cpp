@@ -257,6 +257,11 @@ class CfgVehicles
 	
 	
 	//Vehicles
+	class 3as_laat_Base;
+	class 3as_LAAT_Mk1;
+	class 3as_LAAT_Mk1Lights;
+	class 3as_LAAT_Mk2;
+	class 3as_LAAT_Mk2Lights;
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
 		displayName="BTL-Y Wing (4th)";
@@ -282,6 +287,70 @@ class CfgVehicles
 	
 	
 	
+	class TAW4th_Vehicle_LAATI_MK1: 3as_LAAT_Mk1
+	{
+		displayName="LAAT/I Mk1 (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Wings_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapons_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Interior_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_LAATI_MK1_Light: 3as_LAAT_Mk1Lights
+	{
+		displayName="LAAT/I Mk1 - Lights (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Wings_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapons_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Interior_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_LAATI_MK2: 3as_LAAT_Mk2
+	{
+		displayName="LAAT/I Mk2 (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Wings_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapons_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Interior_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_LAATI_MK2_Light: 3as_LAAT_Mk2Lights
+	{
+		displayName="LAAT/I Mk2 - Lights (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Wings_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapons_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATI_Interior_Co.paa"
+		};
+	};
 	class TAW4th_Vehicle_LAATLE: 3AS_Patrol_LAAT_Base
 	{
 		displayName="LAAT/LE 'Wasp' (4th)";

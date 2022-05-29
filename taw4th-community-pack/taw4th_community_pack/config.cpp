@@ -25,14 +25,14 @@ class CfgPatches
 };
 class CfgFactionClasses 
 {
-	class TAW4th_Equipment_Faction_Main
+	class TAW4th_Faction_Main
 	{
 	displayName = "TAW 4th Platoon";
 	};
 };
 class CfgEditorSubcategories
 {
-	class TAW4th_Equipment_Faction_Sub
+	class TAW4th_Faction_Sub
 	{
 		displayName="Infantry";
 	};
@@ -169,6 +169,7 @@ class CfgWeapons
 };
 class CfgVehicles
 {
+	
 	class SWLB_clone_commando_base;
 	class SWLB_clone_commando_backpack_k2;
 	class SWLB_clone_commando_backpack_k2_rto;
@@ -219,18 +220,13 @@ class CfgVehicles
 		};
 	};
 	
-	
-	
-	
-	
-	
 	//Uniforms
 	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper";
-		faction="TAW4th_Equipment_Faction_Main";
-		editorSubcategory="TAW4th_Equipment_Faction_Sub";
+		faction="TAW4th_Faction_Main";
+		editorSubcategory="TAW4th_Faction_Sub";
 		backpack="TAW4th_Equipment_Backpack";
 		uniformclass="TAW4th_Equipment_Trooper_Uniform";
 		hiddenSelectionsTextures[]=
@@ -253,23 +249,29 @@ class CfgVehicles
 	};
 	
 	
-	class 3AS_BTLB_Bomber;
 	
 	
 	//Vehicles
+	class Eventhandlers;
+	class ViewPilot;
+	class UserActions;
+	
+	class 3AS_BTLB_Bomber;
 	class 3AS_LAATC;
 	class 3as_laat_Base;
 	class 3as_LAAT_Mk1;
 	class 3as_LAAT_Mk1Lights;
 	class 3as_LAAT_Mk2;
 	class 3as_LAAT_Mk2Lights;
+	class 3AS_Patrol_LAAT_Base;
+	
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
 		displayName="BTL-Y Wing (4th)";
 		scope=2;
 		crew="3AS_Clone_P2_Pilot";
 		side=1;
-		faction="TAW4th_Equipment_Faction_Main";
+		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
 		{
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BTLB_Co.paa",
@@ -277,17 +279,6 @@ class CfgVehicles
 			"3as\3as_btlb\data\interior_co.paa"
 		};
 	};
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	class TAW4th_Vehicle_LAATC: 3AS_LAATC
 	{
 		displayName="LAAT/C (4th)";

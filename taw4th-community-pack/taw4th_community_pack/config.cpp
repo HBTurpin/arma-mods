@@ -257,6 +257,7 @@ class CfgVehicles
 	
 	
 	//Vehicles
+	class 3AS_LAATC;
 	class 3as_laat_Base;
 	class 3as_LAAT_Mk1;
 	class 3as_LAAT_Mk1Lights;
@@ -287,6 +288,19 @@ class CfgVehicles
 	
 	
 	
+	class TAW4th_Vehicle_LAATC: 3AS_LAATC
+	{
+		displayName="LAAT/C (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATC_0_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATC_1_Co.paa"
+		};
+	};
 	class TAW4th_Vehicle_LAATI_MK1: 3as_LAAT_Mk1
 	{
 		displayName="LAAT/I Mk1 (4th)";

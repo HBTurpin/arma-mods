@@ -282,4 +282,125 @@ class CfgVehicles
 	
 	
 	
+	class TAW4th_Vehicle_LAATLE: 3AS_Patrol_LAAT_Base
+	{
+		displayName="LAAT/LE 'Wasp' (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		forceInGarage=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		radarTargetSize=0.2;
+		visualTargetSize=0.2;
+		editorPreview="";
+		memoryPointGun[]=
+		{
+			"L_Muzzle",
+			"R_muzzle"
+		};
+		gunBeg[]=
+		{
+			"L_Muzzle",
+			"R_Muzzle"
+		};
+		gunEnd[]=
+		{
+			"L_Chamber",
+			"R_Chamber"
+		};
+		weapons[]=
+		{
+			"Laserdesignator_pilotCamera",
+			"327th_laatle_cannon",
+			"327th_UGM",
+			"ls_weapon_CMFlareLauncher"
+		};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_LAATLE_Co.paa"
+		};
+		magazines[]=
+		{
+			"Laserbatteries",
+			"327th_laatle_cannon_x500_mag",
+			"327th_laatle_cannon_x500_mag",
+			"327th_ugm_mag6x",
+			"ls_mag_192rnd_CMFlareChaff_cyan",
+			"ls_mag_192rnd_CMFlareChaff_cyan",
+			"ls_mag_192rnd_CMFlareChaff_cyan"
+		};
+		class TransportBackpacks
+		{
+			class transport_parachutes
+			{
+				backpack="B_Parachute";
+				count="30";
+			};
+		};
+		class UserActions: UserActions
+		{
+			class DamageReport
+			{
+				displayName="<t color='#00FF00'>Damage Report</t>";
+				displayNameDefault="<t color='#00FF00'>Damage Report</t>";
+				textToolTip="<t color='#00FF00'>Damage Report</t>";
+				position="pilotview";
+				radius=10;
+				priority=21;
+				onlyForPlayer=1;
+				condition="(alive this)";
+				statement="this execVM ""\taw4th_community_pack\function\veh_damage_report.sqf""";
+			};
+			class ThrusterEngage
+			{
+				displayName="<t color='#4C9900'>[Impulsor On]</t>";
+				displayNameDefault="<t color='#4C9900'>[Impulsor On]</t>";
+				textToolTip="<t color='#4C9900'>[Impulsor On]</t>";
+				position="pilotview";
+				radius=20;
+				priority=21;
+				onlyForPlayer=1;
+				condition="(!(this getvariable [""impulsorStatus"",false]) AND (player == currentPilot this) AND (alive this) AND (speed this >10) )";
+				statement="this execVM ""\taw4th_community_pack\function\laat_le_thruster_engage.sqf""";
+			};
+			class ThrusterDisengage: ThrusterEngage
+			{
+				priority=21;
+				displayName="<t color='#FF9933'>[RepulsorBrake On]</t>";
+				displayNameDefault="<t color='#FF9933'>[RepulsorBrake On]</t>";
+				textToolTip="<t color='#FF9933'>[RepulsorBrake On]</t>";
+				condition="((this getvariable [""impulsorStatus"",false]) AND (player == currentPilot this) AND (alive this))";
+				statement="this execVM ""\taw4th_community_pack\function\laat_le_thruster_disengage.sqf""";
+			};
+			class ThrusterEngage_Spam: ThrusterEngage
+			{
+				displayName="";
+				displayNameDefault="";
+				textToolTip="";
+				position="pilotview";
+				radius=20;
+				priority=0;
+				onlyForPlayer=1;
+				condition="((player == currentPilot this) AND (alive this) AND (speed this >10) )";
+				statement="this execVM ""\taw4th_community_pack\function\laat_le_thruster_engage.sqf""";
+				shortcut="User19";
+			};
+			class ThrusterDisengage_Spam: ThrusterEngage
+			{
+				priority=0;
+				displayName="";
+				displayNameDefault="";
+				textToolTip="";
+				condition="((player == currentPilot this) AND (alive this))";
+				statement="this execVM ""\taw4th_community_pack\function\laat_le_thruster_disengage.sqf""";
+				shortcut="User20";
+			};
+		};
+	};
 };

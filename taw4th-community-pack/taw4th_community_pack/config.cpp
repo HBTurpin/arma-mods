@@ -17,6 +17,7 @@ class CfgPatches
 			
 			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
 			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
+			"TAW4th_Equipment_Trooper_Helmet_C_HBTurpin",
 			
 		};
 	};
@@ -147,6 +148,15 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Helmet_C_HBTurpin: SWLB_clone_P2_helmet
+	{
+		author="TAW";
+		displayName="Clone Trooper P2 Helmet (4th) [HBTurpin]";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
 		};
 	};
 	

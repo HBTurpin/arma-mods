@@ -5,21 +5,48 @@ class CfgPatches
 		units[]=
 		{
 			"TAW4th_Equipment_Backpack",
-			"TAW4th_Equipment_Trooper",
+			"TAW4th_Equipment_Backpack_Medic",
 
+			"TAW4th_Equipment_Trooper",
+			"TAW4th_Equipment_Trooper_Officer",
+			"TAW4th_Equipment_Trooper_Medic",
+			
+			"TAW4th_Vehicle_BTLB_YWing",
+			"TAW4th_Vehicle_LAATC",
+			"TAW4th_Vehicle_LAATI_MK1",
+			"TAW4th_Vehicle_LAATI_MK1_Light",
+			"TAW4th_Vehicle_LAATI_MK2",
+			"TAW4th_Vehicle_LAATI_MK2_Light",
+			"TAW4th_Vehicle_LAATLE",
+			"TAW4th_Vehicle_ARC170",
+			"TAW4th_Vehicle_ARC170_Razor",
+			"TAW4th_Vehicle_TX130_M1",
+			"TAW4th_Vehicle_TX130_M1Recon",
+			"TAW4th_Vehicle_TX130_M1G",
+			"TAW4th_Vehicle_TX130_Super",
 		};
 		weapons[]=
 		{
 			"TAW4th_Equipment_Trooper_NVG",
+			
 			"TAW4th_Equipment_Trooper_Helmet",
-			"TAW4th_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_Helmet_Medic",
+			
+			"TAW4th_Equipment_Trooper_Vest_Recon",
+			"TAW4th_Equipment_Trooper_Vest_ARC",
+			"TAW4th_Equipment_Trooper_Vest_Officer",
+			"TAW4th_Equipment_Trooper_Vest_Officer2",
+			
 			"TAW4th_Equipment_Trooper_Uniform",
+			"TAW4th_Equipment_Trooper_Uniform_Medic",
 			
 			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
 			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
 			"TAW4th_Equipment_Trooper_Helmet_C_HBTurpin",
-			
 		};
+
+		
+		
 	};
 	author="TAW";
 };
@@ -36,9 +63,9 @@ class CfgFactionClasses
 };
 class CfgEditorSubcategories
 {
-	class TAW4th_Faction_Sub
+	class TAW4th_Faction_Infantry
 	{
-		displayName="Infantry";
+		displayName="Troopers";
 	};
 };
 
@@ -95,7 +122,7 @@ class CfgWeapons
 	class Vest_Camo_Base;
 	class lsd_gar_standard_nvg;
 	
-	//BASE STANDARD
+	//EQUIPMENT
 	class TAW4th_Equipment_Trooper_NVG: lsd_gar_standard_nvg
 	{
 		author="TAW";
@@ -105,6 +132,10 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_NVG_Co.paa",
 		};
 	};
+	
+	
+	
+	//HELMETS
 	class TAW4th_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
 	{
 		author="TAW";
@@ -114,7 +145,6 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Co.paa",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Vest: SWLB_clone_recon_armor
 	class TAW4th_Equipment_Trooper_Helmet_Medic: SWLB_clone_P2_helmet
 	{
 		author="TAW";
@@ -124,6 +154,10 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Medic_Co.paa",
 		};
 	};
+	
+	
+	//VESTS
+	class TAW4th_Equipment_Trooper_Vest_Recon: SWLB_clone_recon_armor
 	{
 		author="TAW";
         displayName = "Clone Trooper Recon Vest (4th)";
@@ -162,9 +196,12 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer2_Co.paa",
 		};
 	};
+	
+	
+	//UNIFORMS
 	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_uniform
 	{
-	   author="TAW";
+	    author="TAW";
 		displayName="Clone Trooper Armor (4th)";
 		class ItemInfo: UniformItem
 		{
@@ -189,6 +226,7 @@ class CfgWeapons
 		};
 	};
 	
+
 	// CUSTOM HELMETS
 	class TAW4th_Equipment_Trooper_Helmet_C_Almerra: SWLB_clone_P2_helmet
 	{
@@ -217,9 +255,6 @@ class CfgWeapons
 			"taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
 		};
 	};
-	
-	
-	
 	
 };
 
@@ -265,7 +300,7 @@ class CfgVehicles
 	class O_officer_F;
     class ls_carrybox_base;
 
-	// Backpacks
+	//BACKPACKS
 	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
 	{
 		author="TAW";
@@ -287,27 +322,16 @@ class CfgVehicles
 		};
 	};
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//Uniforms
+
+	//UNIFORMS/UNITS
 	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper";
 		faction="TAW4th_Faction_Main";
-		editorSubcategory="TAW4th_Faction_Sub";
+		editorSubcategory="TAW4th_Faction_Infantry";
+		scope=2;
+		side=1;
 		backpack="TAW4th_Equipment_Backpack";
 		uniformclass="TAW4th_Equipment_Trooper_Uniform";
 		hiddenSelectionsTextures[]=
@@ -326,6 +350,34 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_NVG",
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Officer: SWLB_clone_base_P2
+	{
+		author="TAW";
+		displayName="Clone Trooper Officer";
+		faction="TAW4th_Faction_Main";
+		editorSubcategory="TAW4th_Faction_Infantry";
+		scope=2;
+		side=1;
+		backpack="TAW4th_Equipment_Backpack";
+		uniformclass="TAW4th_Equipment_Trooper_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Co.paa",
+		};
+		linkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest_Officer2",
+		};
+		respawnLinkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest_Officer2",
 		};
 	};
 	class TAW4th_Equipment_Trooper_Medic: SWLB_clone_base_P2
@@ -357,18 +409,8 @@ class CfgVehicles
 		};
 	};
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	//Vehicles
+
+	//VEHICLES
 	class Eventhandlers;
 	class ViewPilot;
 	class UserActions;

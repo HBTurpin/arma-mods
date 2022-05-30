@@ -736,4 +736,58 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Weapon_Co.paa"
 		};
 	};
+	class TAW4th_Vehicle_BARC: 3AS_BARC_Base
+	{
+		author="TAW";
+		mapSize=6.71;
+		scopecurator=2;
+		forceingarage=1;
+		displayname="BARC Speeder (4th)";
+		editorPreview="";
+		_generalMacro="B_MRAP_01_F";
+		scope=2;
+		side=1;
+		faction="TAW4th_Faction_Main";
+		crew="TAW4th_Trooper";
+		typicalCargo[]=
+		{
+			"TAW4th_Trooper"
+		};
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BARC_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_BARC_Sidecar: 3AS_BarcSideCar
+	{
+		author="TAW";
+		mapSize=6.71;
+		scopecurator=2;
+		forceingarage=1;
+		displayname="BARC Speeder Sidecar (4th)";
+		editorPreview="";
+		_generalMacro="B_MRAP_01_F";
+		scope=2;
+		side=1;
+		faction="TAW4th_Faction_Main";
+		crew="TAW4th_Trooper";
+		typicalCargo[]=
+		{
+			"TAW4th_Trooper"
+		};
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BARC_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BARC_Side_Co.paa"
+		};
+	};
 };

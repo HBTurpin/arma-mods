@@ -10,20 +10,30 @@ class CfgPatches
 			"TAW4th_Equipment_Trooper",
 			"TAW4th_Equipment_Trooper_Officer",
 			"TAW4th_Equipment_Trooper_Medic",
+			"TAW4th_Equipment_Trooper_Pilot",
+			
+			
 			
 			"TAW4th_Vehicle_BTLB_YWing",
+			
 			"TAW4th_Vehicle_LAATC",
 			"TAW4th_Vehicle_LAATI_MK1",
 			"TAW4th_Vehicle_LAATI_MK1_Light",
 			"TAW4th_Vehicle_LAATI_MK2",
 			"TAW4th_Vehicle_LAATI_MK2_Light",
 			"TAW4th_Vehicle_LAATLE",
+			
 			"TAW4th_Vehicle_ARC170",
 			"TAW4th_Vehicle_ARC170_Razor",
+			"TAW4th_Vehicle_Z95",
+			
 			"TAW4th_Vehicle_TX130_M1",
 			"TAW4th_Vehicle_TX130_M1Recon",
 			"TAW4th_Vehicle_TX130_M1G",
 			"TAW4th_Vehicle_TX130_Super",
+
+			"TAW4th_Vehicle_BARC",
+			"TAW4th_Vehicle_BARC_Sidecar",
 		};
 		weapons[]=
 		{
@@ -206,7 +216,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
-			uniformClass="TAW4th_Equipment_Trooper";
+			uniformClass="TAW4th_Trooper";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
@@ -219,7 +229,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
-			uniformClass="TAW4th_Equipment_Trooper_Medic";
+			uniformClass="TAW4th_Trooper_Medic";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
@@ -299,6 +309,7 @@ class CfgVehicles
 	class ls_blueforBackpack_base;
 	class O_officer_F;
     class ls_carrybox_base;
+	class 3AS_Clone_P2_Pilot;
 
 	//BACKPACKS
 	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
@@ -324,7 +335,7 @@ class CfgVehicles
 	
 
 	//UNIFORMS/UNITS
-	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
+	class TAW4th_Trooper: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper";
@@ -352,7 +363,7 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Officer: SWLB_clone_base_P2
+	class TAW4th_Trooper_Officer: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper Officer";
@@ -380,10 +391,10 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest_Officer2",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Medic: SWLB_clone_base_P2
+	class TAW4th_Trooper_Medic: SWLB_clone_base_P2
 	{
 		author="TAW";
-		displayName="Clone Trooper (Medic)";
+		displayName="Clone Trooper Medic";
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
@@ -408,6 +419,34 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
+	class TAW4th_Trooper_Pilot: 3AS_Clone_P2_Pilot
+	{
+		author="TAW";
+		displayName="Clone Trooper Pilot";
+		faction="TAW4th_Faction_Main";
+		editorSubcategory="TAW4th_Faction_Infantry";
+		scope=2;
+		side=1;
+		backpack="TAW4th_Equipment_Backpack";
+		uniformclass="TAW4th_Equipment_Trooper_Uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Co.paa",
+		};
+		linkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
+		};
+		respawnLinkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
+		};
+	};
 	
 
 	//VEHICLES
@@ -423,17 +462,23 @@ class CfgVehicles
 	class 3as_LAAT_Mk2;
 	class 3as_LAAT_Mk2Lights;
 	class 3AS_Patrol_LAAT_Base;
+	class 3as_Z95_base;
 	class 3as_arc_170_base;
 	class 3as_saber_m1;
 	class 3as_saber_super;
 	class 3as_saber_m1G;
 	class 3as_saber_m1Recon;
 	
+	class 3AS_BarcSideCar;
+	class 3AS_BARC_Base;
+	
+	
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
+		author="TAW";
 		displayName="BTL-Y Wing (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -445,9 +490,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATC: 3AS_LAATC
 	{
+		author="TAW";
 		displayName="LAAT/C (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenSelectionsTextures[]=
@@ -458,9 +504,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATI_MK1: 3as_LAAT_Mk1
 	{
+		author="TAW";
 		displayName="LAAT/I Mk1 (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenSelectionsTextures[]=
@@ -474,9 +521,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATI_MK1_Light: 3as_LAAT_Mk1Lights
 	{
+		author="TAW";
 		displayName="LAAT/I Mk1 - Lights (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenSelectionsTextures[]=
@@ -490,9 +538,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATI_MK2: 3as_LAAT_Mk2
 	{
+		author="TAW";
 		displayName="LAAT/I Mk2 (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenSelectionsTextures[]=
@@ -506,9 +555,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATI_MK2_Light: 3as_LAAT_Mk2Lights
 	{
+		author="TAW";
 		displayName="LAAT/I Mk2 - Lights (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenSelectionsTextures[]=
@@ -522,9 +572,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_LAATLE: 3AS_Patrol_LAAT_Base
 	{
+		author="TAW";
 		displayName="LAAT/LE 'Wasp' (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		forceInGarage=2;
@@ -643,9 +694,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_ARC170: 3as_arc_170_base
 	{
+		author="TAW";
 		displayName="ARC-170 (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -657,9 +709,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_ARC170_Razor: 3as_arc_170_base
 	{
+		author="TAW";
 		displayName="ARC-170 'Razor' (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -686,9 +739,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_TX130_M1: 3as_saber_m1
 	{
+		author="TAW";
 		displayName="TX-130 M1 (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -699,9 +753,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_TX130_M1Recon: 3as_saber_m1Recon
 	{
+		author="TAW";
 		displayName="TX-130 M1 Recon (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -712,9 +767,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_TX130_M1G: 3as_saber_m1G
 	{
+		author="TAW";
 		displayName="TX-130 M1 GL (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -725,9 +781,10 @@ class CfgVehicles
 	};
 	class TAW4th_Vehicle_TX130_Super: 3as_saber_super
 	{
+		author="TAW";
 		displayName="TX-130 Super Saber (4th)";
 		scope=2;
-		crew="3AS_Clone_P2_Pilot";
+		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
 		hiddenselectionstextures[]=
@@ -790,4 +847,5 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BARC_Side_Co.paa"
 		};
 	};
+
 };

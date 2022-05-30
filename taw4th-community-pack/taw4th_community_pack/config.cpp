@@ -115,6 +115,15 @@ class CfgWeapons
 		};
 	};
 	class TAW4th_Equipment_Trooper_Vest: SWLB_clone_recon_armor
+	class TAW4th_Equipment_Trooper_Helmet_Medic: SWLB_clone_P2_helmet
+	{
+		author="TAW";
+		displayName="Clone Trooper P2 Helmet (Medic) (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Medic_Co.paa",
+		};
+	};
 	{
 		author="TAW";
         displayName = "Clone Trooper Recon Vest (4th)";
@@ -161,6 +170,19 @@ class CfgWeapons
 		{
 			uniformType = "Neopren";
 			uniformClass="TAW4th_Equipment_Trooper";
+			containerClass="Supply150";
+			mass=40;
+			vestType="Rebreather";
+		};
+	};
+	class TAW4th_Equipment_Trooper_Uniform_Medic: SWLB_clone_uniform
+	{
+	    author="TAW";
+		displayName="Clone Trooper Armor (Medic) (4th)";
+		class ItemInfo: UniformItem
+		{
+			uniformType = "Neopren";
+			uniformClass="TAW4th_Equipment_Trooper_Medic";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
@@ -254,6 +276,16 @@ class CfgVehicles
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
 		};
 	};
+	class TAW4th_Equipment_Backpack_Medic: SWLB_clone_backpack
+	{
+		author="TAW";
+		displayName="Clone Trooper Backpack (Medic) (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
+		};
+	};
 	
 	
 	
@@ -293,6 +325,34 @@ class CfgVehicles
 		{
 			"TAW4th_Equipment_Trooper_NVG",
 			"TAW4th_Equipment_Trooper_Helmet",
+			"TAW4th_Equipment_Trooper_Vest",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Medic: SWLB_clone_base_P2
+	{
+		author="TAW";
+		displayName="Clone Trooper (Medic)";
+		faction="TAW4th_Faction_Main";
+		editorSubcategory="TAW4th_Faction_Infantry";
+		scope=2;
+		side=1;
+		backpack="TAW4th_Equipment_Backpack_Medic";
+		uniformclass="TAW4th_Equipment_Trooper_Uniform_Medic";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Medic_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Medic_Co.paa",
+		};
+		linkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet_Medic",
+			"TAW4th_Equipment_Trooper_Vest",
+		};
+		respawnLinkedItems[]=
+		{
+			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Helmet_Medic",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};

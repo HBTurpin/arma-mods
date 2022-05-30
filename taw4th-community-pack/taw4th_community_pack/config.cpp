@@ -125,6 +125,34 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Co.paa",
 		};
 	};
+	class TAW4th_Equipment_Trooper_Vest_ARC: SWLB_clone_arc_armor
+	{
+		author="TAW";
+        displayName = "Clone Trooper ARC Vest (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_ARC_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Officer: SWLB_clone_officer_armor
+	{
+		author="TAW";
+        displayName = "Clone Trooper Officer Vest 1 (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Officer_2: SWLB_clone_officer_armor
+	{
+		author="TAW";
+        displayName = "Clone Trooper Officer Vest 2 (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer2_Co.paa",
+		};
+	};
 	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_uniform
 	{
 	   author="TAW";

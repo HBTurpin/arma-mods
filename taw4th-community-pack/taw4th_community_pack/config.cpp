@@ -264,6 +264,7 @@ class CfgVehicles
 	class 3as_LAAT_Mk2;
 	class 3as_LAAT_Mk2Lights;
 	class 3AS_Patrol_LAAT_Base;
+	class 3as_arc_170_base;
 	
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
@@ -475,6 +476,34 @@ class CfgVehicles
 				statement="this execVM ""\taw4th_community_pack\function\laat_le_thruster_disengage.sqf""";
 				shortcut="User20";
 			};
+		};
+	};
+	class TAW4th_Vehicle_ARC170: 3as_arc_170_base
+	{
+		displayName="ARC-170 (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Frame_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Engine_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Guns_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_ARC170_Razor: 3as_arc_170_base
+	{
+		displayName="ARC-170 'Razor' (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Frame_Razor_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Engine_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Guns_Co.paa"
 		};
 	};
 };

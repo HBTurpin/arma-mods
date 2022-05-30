@@ -669,6 +669,21 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Guns_Co.paa"
 		};
 	};
+	class TAW4th_Vehicle_Z95: 3as_Z95_base
+	{
+		author="TAW";
+		displayName="Z-95 Headhunter (4th)";
+		scope=2;
+		crew="TAW4th_Trooper_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_Z95_Body_Co.paa",
+			"3AS\3as_Z95\Data\cockpit_co.paa",
+			"3AS\3as_saber\data\glass\glass_ca"
+		};
+	};
 	class TAW4th_Vehicle_TX130_M1: 3as_saber_m1
 	{
 		displayName="TX-130 M1 (4th)";

@@ -265,6 +265,10 @@ class CfgVehicles
 	class 3as_LAAT_Mk2Lights;
 	class 3AS_Patrol_LAAT_Base;
 	class 3as_arc_170_base;
+	class 3as_saber_m1;
+	class 3as_saber_super;
+	class 3as_saber_m1G;
+	class 3as_saber_m1Recon;
 	
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
@@ -506,4 +510,55 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ARC170_Guns_Co.paa"
 		};
 	};
+	class TAW4th_Vehicle_TX130_M1: 3as_saber_m1
+	{
+		displayName="TX-130 M1 (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Weapon_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_TX130_M1Recon: 3as_saber_m1Recon
+	{
+		displayName="TX-130 M1 Recon (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_WeaponScout_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_TX130_M1G: 3as_saber_m1G
+	{
+		displayName="TX-130 M1 GL (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_WeaponGMG_Co.paa"
+		};
+	};
+	class TAW4th_Vehicle_TX130_Super: 3as_saber_super
+	{
+		displayName="TX-130 Super Saber (4th)";
+		scope=2;
+		crew="3AS_Clone_P2_Pilot";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Weapon_Co.paa"
+		};
 };

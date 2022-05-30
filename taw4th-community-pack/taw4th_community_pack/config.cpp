@@ -23,6 +23,10 @@ class CfgPatches
 	};
 	author="TAW";
 };
+
+
+
+//FACTIONS
 class CfgFactionClasses 
 {
 	class TAW4th_Faction_Main
@@ -37,6 +41,10 @@ class CfgEditorSubcategories
 		displayName="Infantry";
 	};
 };
+
+
+
+//NEW ITEMS/VEHICLES
 class CfgWeapons
 {
 	class SWLB_clone_ccVisor;
@@ -163,13 +171,12 @@ class CfgWeapons
 	
 	
 	
-	
-	
-
 };
+
+
+
 class CfgVehicles
 {
-	
 	class SWLB_clone_commando_base;
 	class SWLB_clone_commando_backpack_k2;
 	class SWLB_clone_commando_backpack_k2_rto;
@@ -220,6 +227,20 @@ class CfgVehicles
 		};
 	};
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//Uniforms
 	class TAW4th_Equipment_Trooper: SWLB_clone_base_P2
 	{
@@ -247,6 +268,14 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -407,9 +436,9 @@ class CfgVehicles
 		magazines[]=
 		{
 			"Laserbatteries",
-			"327th_laatle_cannon_x500_mag",
-			"327th_laatle_cannon_x500_mag",
-			"327th_ugm_mag6x",
+			"327th_laatle_cannon_x500_mag",	//NEED TO REMOVE 327 DEPENDENCY
+			"327th_laatle_cannon_x500_mag", //NEED TO REMOVE 327 DEPENDENCY
+			"327th_ugm_mag6x",  //NEED TO REMOVE 327 DEPENDENCY
 			"ls_mag_192rnd_CMFlareChaff_cyan",
 			"ls_mag_192rnd_CMFlareChaff_cyan",
 			"ls_mag_192rnd_CMFlareChaff_cyan"
@@ -426,7 +455,7 @@ class CfgVehicles
 		{
 			class DamageReport
 			{
-				displayName="<t color='#00FF00'>Damage Report</t>";
+				displayName="<t color='#00FF00'>[Damage Report]</t>";
 				displayNameDefault="<t color='#00FF00'>Damage Report</t>";
 				textToolTip="<t color='#00FF00'>Damage Report</t>";
 				position="pilotview";
@@ -561,4 +590,5 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Hull_Co.paa",
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_TX130_Weapon_Co.paa"
 		};
+	};
 };

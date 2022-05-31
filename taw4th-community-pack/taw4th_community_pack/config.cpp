@@ -35,6 +35,7 @@ class CfgPatches
 
 			"TAW4th_Vehicle_BARC",
 			"TAW4th_Vehicle_BARC_Sidecar",
+			"TAW4th_Vehicle_RTT",
 		};
 		weapons[]=
 		{
@@ -876,5 +877,21 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_BARC_Side_Co.paa"
 		};
 	};
+	class TAW4th_Vehicle_RTT: 3as_RTT
+	{
+		author="TAW";
+		displayname="RTT (4th)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_RTT_Co.paa"
+		};
 
 };

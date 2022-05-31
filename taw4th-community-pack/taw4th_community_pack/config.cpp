@@ -47,6 +47,7 @@ class CfgPatches
 			
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
+			"TAW4th_Equipment_Trooper_PHelmet",
 			
 			"TAW4th_Equipment_Trooper_Vest_Recon",
 			"TAW4th_Equipment_Trooper_Vest_ARC",
@@ -168,6 +169,19 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Medic_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_PHelmet: SWLB_clone_pilot_P2_helmet
+	{
+		author="TAW";
+		displayName="Clone Trooper P2 Pilot Helmet (4th)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_PHelmet_Co.paa",
 		};
 	};
 	

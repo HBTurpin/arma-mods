@@ -39,6 +39,7 @@ class CfgPatches
 
 			"TAW4th_Vehicle_ATTE",
 			"TAW4th_Vehicle_ATJT",
+			"TAW4th_Vehicle_ATRT",
 		};
 		weapons[]=
 		{
@@ -478,6 +479,7 @@ class CfgVehicles
 	class 3AS_BarcSideCar;
 	class 3AS_BARC_Base;
 	
+	class 3AS_ATRT;
 	
 	class TAW4th_Vehicle_V19: 3as_V19_base
 	{
@@ -931,6 +933,15 @@ class CfgVehicles
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Underpiping_Co.paa",
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_MiddleLeg_Co.paa",
 		};
+	};
+	class TAW4th_Vehicle_ATRT: 3AS_ATRT //THESE AREN'T TEXTUREABLE AT THE MOMENT AS IS ALL IN P3D FILE
+	{
+		author="TAW";
+		displayName="AT-RT (4th) (WIP)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
 	};
 
 };

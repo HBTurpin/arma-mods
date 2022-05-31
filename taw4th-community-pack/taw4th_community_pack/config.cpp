@@ -14,6 +14,7 @@ class CfgPatches
 			
 			
 			
+			"TAW4th_Vehicle_V19",
 			"TAW4th_Vehicle_BTLB_YWing",
 			
 			"TAW4th_Vehicle_LAATC",
@@ -454,6 +455,7 @@ class CfgVehicles
 	class ViewPilot;
 	class UserActions;
 	
+	class 3as_V19_base;
 	class 3AS_BTLB_Bomber;
 	class 3AS_LAATC;
 	class 3as_laat_Base;
@@ -473,6 +475,33 @@ class CfgVehicles
 	class 3AS_BARC_Base;
 	
 	
+	class TAW4th_Vehicle_V19: 3as_V19_base
+	{
+		author="TAW";
+		displayName="V-19 Torrent (4th)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6"
+		};
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_V19_Wings_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_V19_Wing Plates_co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_V19_Hull_co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_V19_GunGear_co.paa",
+			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_V19_Pizzlepit_co.paa"
+		};
+	};
 	class TAW4th_Vehicle_BTLB_YWing: 3AS_BTLB_Bomber
 	{
 		author="TAW";

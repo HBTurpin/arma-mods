@@ -13,7 +13,6 @@ class CfgPatches
 			"TAW4th_Equipment_Trooper_Pilot",
 			
 			
-			
 			"TAW4th_Vehicle_V19",
 			"TAW4th_Vehicle_BTLB_YWing",
 			
@@ -477,9 +476,13 @@ class CfgVehicles
 	class 3as_saber_m1G;
 	class 3as_saber_m1Recon;
 	
+	class 3as_RTT;
+	
 	class 3AS_BarcSideCar;
 	class 3AS_BARC_Base;
-	
+
+	class 3as_ATTE_Base;
+	class 3as_ATJT_Base;
 	class 3AS_ATRT;
 	class 3as_ATAP_base;
 	
@@ -900,6 +903,7 @@ class CfgVehicles
 		{
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_RTT_Co.paa"
 		};
+	};
 	class TAW4th_Vehicle_ATTE: 3as_ATTE_Base //MIDDLELEG NOT TEXTUREABLE, LOCATED IN P3D
 	{
 		author="TAW";
@@ -954,5 +958,11 @@ class CfgVehicles
 		side=1;
 		faction="TAW4th_Faction_Main";
 	};
+
+
+
+
+
+
 
 };

@@ -36,6 +36,9 @@ class CfgPatches
 			"TAW4th_Vehicle_BARC",
 			"TAW4th_Vehicle_BARC_Sidecar",
 			"TAW4th_Vehicle_RTT",
+
+			"TAW4th_Vehicle_ATTE",
+			"TAW4th_Vehicle_ATJT",
 		};
 		weapons[]=
 		{
@@ -893,5 +896,41 @@ class CfgVehicles
 		{
 			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_RTT_Co.paa"
 		};
+	class TAW4th_Vehicle_ATTE: 3as_ATTE_Base //MIDDLELEG NOT TEXTUREABLE, LOCATED IN P3D
+	{
+		author="TAW";
+		displayName="AT-TE (4th) (WIP)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Chasis_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Cockpit_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Turrets_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Underpiping_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_MiddleLeg_Co.paa",
+		};
+	};
+	class TAW4th_Vehicle_ATJT: 3AS_ATJT_Base //WHEELS NOT TEXTUREABLE, LOCATED IN P3D
+	{
+		author="TAW";
+		displayName="AT-JT (4th) (WIP)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
+		hiddenselectionstextures[]=
+		{
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Hull_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Chasis_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Cockpit_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Turrets_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_Underpiping_Co.paa",
+			"taw4th_community_pack\data\vehicles\TAW4th_Vehicles_ATTE_MiddleLeg_Co.paa",
+		};
+	};
 
 };

@@ -43,7 +43,7 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_NVG",
 			
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
@@ -139,13 +139,13 @@ class CfgWeapons
 	class lsd_gar_standard_nvg;
 	
 	//EQUIPMENT
-	class TAW4th_Equipment_Trooper_NVG: lsd_gar_standard_nvg
+	class TAW4th_Equipment_Trooper_Visor_NVG: lsd_gar_standard_nvg
 	{
 		author="TAW";
-		displayName="Clone Visor (4th)";
+		displayName="Clone Trooper Visor (4th)";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_NVG_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_NVG_Co.paa",
 		};
 	};
 	

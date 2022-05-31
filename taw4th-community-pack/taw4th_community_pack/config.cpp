@@ -40,6 +40,7 @@ class CfgPatches
 			"TAW4th_Vehicle_ATTE",
 			"TAW4th_Vehicle_ATJT",
 			"TAW4th_Vehicle_ATRT",
+			"TAW4th_Vehicle_ATAP",
 		};
 		weapons[]=
 		{
@@ -480,6 +481,7 @@ class CfgVehicles
 	class 3AS_BARC_Base;
 	
 	class 3AS_ATRT;
+	class 3as_ATAP_base;
 	
 	class TAW4th_Vehicle_V19: 3as_V19_base
 	{
@@ -938,6 +940,15 @@ class CfgVehicles
 	{
 		author="TAW";
 		displayName="AT-RT (4th) (WIP)";
+		scope=2;
+		crew="TAW4th_Trooper";
+		side=1;
+		faction="TAW4th_Faction_Main";
+	};
+	class TAW4th_Vehicle_ATAP: 3as_ATAP_base //THESE AREN'T TEXTUREABLE AT THE MOMENT AS IS ALL IN P3D FILE
+	{
+		author="TAW";
+		displayName="AT-AP (4th) (WIP)";
 		scope=2;
 		crew="TAW4th_Trooper";
 		side=1;

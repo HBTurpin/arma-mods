@@ -44,6 +44,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"TAW4th_Equipment_Trooper_Visor_NVG",
+			"TAW4th_Equipment_Trooper_Visor_Rangefinder",
 			
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
@@ -138,6 +139,7 @@ class CfgWeapons
 	class ItemCore;
 	class Vest_Camo_Base;
 	class lsd_gar_standard_nvg;
+	class lsd_gar_rangefinder_nvg;
 	
 	//EQUIPMENT
 	class TAW4th_Equipment_Trooper_Visor_NVG: lsd_gar_standard_nvg
@@ -149,7 +151,19 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_NVG_Co.paa",
 		};
 	};
-	
+	class TAW4th_Equipment_Trooper_Visor_Rangefinder: lsd_gar_rangefinder_nvg
+	{
+		author="TAW";
+		displayName="Clone Trooper Rangefinder Visor (4th)";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
+		};
+	};
 	
 	
 	//HELMETS

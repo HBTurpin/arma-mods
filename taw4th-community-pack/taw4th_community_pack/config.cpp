@@ -45,6 +45,8 @@ class CfgPatches
 		{
 			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Visor_Rangefinder",
+			"TAW4th_Equipment_Trooper_Visor_Commander",
+			"TAW4th_Equipment_Trooper_Visor_Commander_Antenna",
 			
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
@@ -138,8 +140,14 @@ class CfgWeapons
 	class VestItem;
 	class ItemCore;
 	class Vest_Camo_Base;
+	
 	class lsd_gar_standard_nvg;
 	class lsd_gar_rangefinder_nvg;
+	class lsd_gar_p2Commander_nvg;
+	class lsd_gar_p2MarshalCommander_nvg;
+	class SWLB_clone_ccVisor;
+	
+	
 	
 	//EQUIPMENT
 	class TAW4th_Equipment_Trooper_Visor_NVG: lsd_gar_standard_nvg
@@ -162,6 +170,24 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Visor_Commander: lsd_gar_p2Commander_nvg
+	{
+		author="TAW";
+		displayName="Clone Trooper Commander Visor (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Commander_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Visor_Commander_Antenna: lsd_gar_p2MarshalCommander_nvg
+	{
+		author="TAW";
+		displayName="Clone Trooper Marshal Commander Visor (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Commander_Co.paa",
 		};
 	};
 	

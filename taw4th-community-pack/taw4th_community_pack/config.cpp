@@ -6,12 +6,14 @@ class CfgPatches
 		{
 			"TAW4th_Equipment_Backpack",
 			"TAW4th_Equipment_Backpack_Medic",
+			"TAW4th_Equipment_Backpack_JLTS",
+			"TAW4th_Equipment_Backpack_JLTS_RTO",
+			"TAW4th_Equipment_Backpack_JLTS_Medic",
 
-			"TAW4th_Equipment_Trooper",
-			"TAW4th_Equipment_Trooper_Officer",
-			"TAW4th_Equipment_Trooper_Medic",
-			"TAW4th_Equipment_Trooper_Pilot",
-			
+			"TAW4th_Equipment_Trooper_Uniform",
+			"TAW4th_Equipment_Trooper_Uniform_Officer",
+			"TAW4th_Equipment_Trooper_Uniform_Medic",
+			"TAW4th_Equipment_Pilot_Uniform",
 			
 			"TAW4th_Vehicle_V19",
 			"TAW4th_Vehicle_BTLB_YWing",
@@ -46,19 +48,25 @@ class CfgPatches
 			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Visor_Rangefinder",
 			"TAW4th_Equipment_Trooper_Visor_Commander",
-			"TAW4th_Equipment_Trooper_Visor_Commander_Antenna",
 			
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
-			"TAW4th_Equipment_Trooper_PHelmet",
+			"TAW4th_Equipment_Pilot_Helmet",
+				
 			
 			"TAW4th_Equipment_Trooper_Vest_Recon",
-			"TAW4th_Equipment_Trooper_Vest_ARC",
-			"TAW4th_Equipment_Trooper_Vest_Officer",
-			"TAW4th_Equipment_Trooper_Vest_Officer2",
+			"TAW4th_Equipment_Trooper_Vest_ARC_A",
+			"TAW4th_Equipment_Trooper_Vest_ARC_B",
+			"TAW4th_Equipment_Trooper_Vest_Officer_A",
+			"TAW4th_Equipment_Trooper_Vest_Officer_B",
+			"TAW4th_Equipment_Pilot_Vest",
+			"TAW4th_Equipment_Trooper_Vest_Medic",
+			"TAW4th_Equipment_Trooper_Vest_Medic_Kama",
+			"TAW4th_Equipment_Trooper_Vest_Holster",
 			
 			"TAW4th_Equipment_Trooper_Uniform",
 			"TAW4th_Equipment_Trooper_Uniform_Medic",
+			"TAW4th_Equipment_Pilot_Uniform",
 			
 			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
 			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
@@ -94,6 +102,7 @@ class CfgEditorSubcategories
 //NEW ITEMS/VEHICLES
 class CfgWeapons
 {
+	class ItemInfo;
 	class SWLB_clone_ccVisor;
 	class SWLB_clone_mcVisor;
 	class SWLB_clone_nvg;
@@ -147,13 +156,20 @@ class CfgWeapons
 	class lsd_gar_p2MarshalCommander_nvg;
 	class SWLB_clone_ccVisor;
 	
+	class 3AS_Pilot_Vest;
+	class 3AS_U_Pilot_Phase3;
 	
+	class JLTS_CloneVestAirborneNCO;
+	class JLTS_CloneVestOfficer2;
 	
-	//EQUIPMENT
+	class JLTS_CloneBinocular;
+	
+	//NVG SLOT
 	class TAW4th_Equipment_Trooper_Visor_NVG: lsd_gar_standard_nvg
 	{
 		author="TAW";
 		displayName="Clone Trooper Visor (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_NVG_Co.paa",
@@ -163,6 +179,7 @@ class CfgWeapons
 	{
 		author="TAW";
 		displayName="Clone Trooper Rangefinder Visor (4th)";
+		scope=2;
 		hiddenSelections[]=
 		{
 			"camo1"
@@ -176,27 +193,20 @@ class CfgWeapons
 	{
 		author="TAW";
 		displayName="Clone Trooper Commander Visor (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Commander_Co.paa",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Visor_Commander_Antenna: lsd_gar_p2MarshalCommander_nvg
-	{
-		author="TAW";
-		displayName="Clone Trooper Marshal Commander Visor (4th)";
-		hiddenSelectionsTextures[]=
-		{
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Visor_Commander_Co.paa",
-		};
-	};
-	
+
 	
 	//HELMETS
 	class TAW4th_Equipment_Trooper_Helmet: SWLB_clone_P2_helmet
 	{
 		author="TAW";
 		displayName="Clone Trooper P2 Helmet (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Co.paa",
@@ -206,31 +216,34 @@ class CfgWeapons
 	{
 		author="TAW";
 		displayName="Clone Trooper P2 Helmet (Medic) (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Medic_Co.paa",
 		};
 	};
-	class TAW4th_Equipment_Trooper_PHelmet: SWLB_clone_pilot_P2_helmet
+	class TAW4th_Equipment_Pilot_Helmet: SWLB_clone_pilot_P2_helmet
 	{
 		author="TAW";
-		displayName="Clone Trooper P2 Pilot Helmet (4th)";
+		displayName="Clone Pilot P2 Helmet (4th)";
+		scope=2;
 		hiddenSelections[]=
 		{
 			"camo1"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_PHelmet_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Pilot_Helmet_Co.paa",
 		};
 	};
 	
-	
+
 	//VESTS
 	class TAW4th_Equipment_Trooper_Vest_Recon: SWLB_clone_recon_armor
 	{
 		author="TAW";
         displayName = "Clone Trooper Recon Vest (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Co.paa",
@@ -238,45 +251,204 @@ class CfgWeapons
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Co.paa",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Vest_ARC: SWLB_clone_arc_armor
+	class TAW4th_Equipment_Trooper_Vest_ARC_A: SWLB_clone_arc_armor
 	{
 		author="TAW";
-        displayName = "Clone Trooper ARC Vest (4th)";
+        displayName = "Clone Trooper ARC Vest A (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_ARC_Co.paa",
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer_Co.paa"
 		};
 	};
-	class TAW4th_Equipment_Trooper_Vest_Officer: SWLB_clone_officer_armor
+	class TAW4th_Equipment_Trooper_Vest_ARC_B: SWLB_clone_arc_armor
 	{
 		author="TAW";
-        displayName = "Clone Trooper Officer Vest 1 (4th)";
+        displayName = "Clone Trooper ARC Vest B (4th)";
+		scope=2;
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_ARC_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer2_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Officer_A: SWLB_clone_officer_armor
+	{
+		author="TAW";
+        displayName = "Clone Trooper Officer Vest A (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer_Co.paa",
 		};
 	};
-	class TAW4th_Equipment_Trooper_Vest_Officer_2: SWLB_clone_officer_armor
+	class TAW4th_Equipment_Trooper_Vest_Officer_B: SWLB_clone_officer_armor
 	{
 		author="TAW";
-        displayName = "Clone Trooper Officer Vest 2 (4th)";
+        displayName = "Clone Trooper Officer Vest B (4th)";
+		scope=2;
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Officer2_Co.paa",
 		};
 	};
+	class TAW4th_Equipment_Pilot_Vest: 3AS_Pilot_Vest
+	{
+		author="TAW";
+        displayName = "Clone Pilot Vest (4th)";
+		scope=2;
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Pilot_Vest_Co.paa",
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Medic: JLTS_CloneVestAirborneNCO
+	{
+		displayName="Clone Medic Vest (4th)";
+		author="TAW";
+		scope=2;
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			containerClass="Supply150";
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=6;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
+				};
+			};
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Medic_Kama: JLTS_CloneVestAirborneNCO
+	{
+		displayName="Clone Medic Vest w/ Kama (4th)";
+		author="TAW";
+		scope=2;
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			containerClass="Supply150";
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=6;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
+				};
+			};
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_SideHolster_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Trooper_Vest_Holster: JLTS_CloneVestOfficer2
+	{
+		displayname="Clone Trooper Sidearm Holster (4th)";
+		author="TAW";
+		scope=2;
+		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\CloneVestHolster_ui_ca.paa";
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformmodel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
+			containerClass="Supply150";
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_SideHolster_Co.paa"
+		};
+	};
+	
+	
+	
+	//BINOCULARS SLOT
+	class TAW4th_Equipment_Trooper_Rangefinder: JLTS_CloneBinocular
+	{
+		displayName="Clone Electrobinoculars (4th)";
+		author="TAW";
+		scope=2;
+		model="\MRC\JLTS\characters\CloneArmor\CloneBinocular.p3d";
+		modelOptics="\MRC\JLTS\characters\CloneArmor\CloneBinocular_optics.p3d";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		opticsPPEffects[]=
+		{
+			"OpticsCHAbera1",
+			"OpticsBlur1"
+		};
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_binocular_ui_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Binoculars_Co.paa"
+		};
+	};
+	
+	
 	
 	
 	//UNIFORMS
 	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_uniform
 	{
 	    author="TAW";
+		scope=2;
 		displayName="Clone Trooper Armor (4th)";
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
-			uniformClass="TAW4th_Trooper";
+			uniformClass="TAW4th_Equipment_Trooper_Uniform";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
@@ -285,22 +457,39 @@ class CfgWeapons
 	class TAW4th_Equipment_Trooper_Uniform_Medic: SWLB_clone_uniform
 	{
 	    author="TAW";
-		displayName="Clone Trooper Armor (Medic) (4th)";
+		scope=2;
+		displayName="Clone Trooper Medic Armor (4th)";
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
-			uniformClass="TAW4th_Trooper_Medic";
+			uniformClass="TAW4th_Equipment_Trooper_Uniform_Medic";
 			containerClass="Supply150";
 			mass=40;
 			vestType="Rebreather";
 		};
 	};
-	
+	class TAW4th_Equipment_Pilot_Uniform: 3AS_U_Pilot_Phase3
+	{
+		author="TAW";
+		scope=2;
+		displayName="Clone Pilot Uniform (4th)";
+		class ItemInfo: UniformItem
+		{
+			uniformType = "Neopren";
+			uniformClass="TAW4th_Equipment_Pilot_Uniform";
+			containerClass="Supply150";
+			mass=40;
+			vestType="Rebreather";
+		};
+	};
+
+
 
 	// CUSTOM HELMETS
 	class TAW4th_Equipment_Trooper_Helmet_C_Almerra: SWLB_clone_P2_helmet
 	{
 		author="TAW";
+		scope=2;
 		displayName="Clone Trooper P2 Helmet (4th) [Almerra]";
 		hiddenSelectionsTextures[]=
 		{
@@ -310,6 +499,7 @@ class CfgWeapons
 	class TAW4th_Equipment_Trooper_Helmet_C_Laffey: SWLB_clone_P2_helmet
 	{
 		author="TAW";
+		scope=2;
 		displayName="Clone Trooper P2 Helmet (4th) [Laffey]";
 		hiddenSelectionsTextures[]=
 		{
@@ -319,6 +509,7 @@ class CfgWeapons
 	class TAW4th_Equipment_Trooper_Helmet_C_HBTurpin: SWLB_clone_P2_helmet
 	{
 		author="TAW";
+		scope=2;
 		displayName="Clone Trooper P2 Helmet (4th) [HBTurpin]";
 		hiddenSelectionsTextures[]=
 		{
@@ -332,6 +523,10 @@ class CfgWeapons
 
 class CfgVehicles
 {
+	
+	class HitPoints;
+
+
 	class SWLB_clone_commando_base;
 	class SWLB_clone_commando_backpack_k2;
 	class SWLB_clone_commando_backpack_k2_rto;
@@ -370,11 +565,16 @@ class CfgVehicles
 	class O_officer_F;
     class ls_carrybox_base;
 	class 3AS_Clone_P2_Pilot;
-
+	class 3AS_U_Republic_Pilot;
+	
+	class JLTS_Clone_backpack;
+	class JLTS_Clone_backpack_RTO;
+	
 	//BACKPACKS
 	class TAW4th_Equipment_Backpack: SWLB_clone_backpack
 	{
 		author="TAW";
+		scope=2;
 		displayName="Clone Trooper Backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
@@ -385,17 +585,55 @@ class CfgVehicles
 	class TAW4th_Equipment_Backpack_Medic: SWLB_clone_backpack
 	{
 		author="TAW";
-		displayName="Clone Trooper Backpack (Medic) (4th)";
+		scope=2;
+		displayName="Clone Trooper Medic Backpack (4th)";
 		hiddenSelectionsTextures[]=
 		{
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
 			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_Co.paa",
 		};
 	};
+	class TAW4th_Equipment_Backpack_JLTS: JLTS_Clone_backpack
+	{
+		author="TAW";
+		scope=2;
+		displayName="Clone Trooper Backpack (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_JLTS_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Backpack_JLTS_RTO: JLTS_Clone_backpack_RTO
+	{
+		author="TAW";
+		scope=2;
+		displayName="Clone Trooper RTO Backpack (4th)";
+		maximumLoad=180;
+		tf_range=50000;
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_JLTS_RTO_Co.paa"
+		};
+	};
+	class TAW4th_Equipment_Backpack_JLTS_Medic: JLTS_Clone_backpack
+	{
+		author="TAW";
+		scope=2;
+		displayName="Clone Trooper Medic Backpack (4th)";
+		hiddenSelectionsTextures[]=
+		{
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Backpack_JLTS_Medic_Co.paa"
+		};
+	};
+
+
+
+
+
 	
 
 	//UNIFORMS/UNITS
-	class TAW4th_Trooper: SWLB_clone_base_P2
+	class TAW4th_Equipment_Trooper_Uniform: SWLB_clone_base_P2
 	{
 		author="TAW";
 		displayName="Clone Trooper";
@@ -412,18 +650,192 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 		respawnLinkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor=1;
+				material=-1;
+				name="face_hub";
+				passThrough=0.80000001;
+				radius=0.079999998;
+				explosionShielding=0.1;
+				minimalHit=0.0099999998;
+			};
+			class HitNeck: HitFace
+			{
+				armor=1;
+				material=-1;
+				name="neck";
+				passThrough=0.80000001;
+				radius=0.1;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+			};
+			class HitHead: HitNeck
+			{
+				armor=1;
+				material=-1;
+				name="head";
+				passThrough=0.80000001;
+				radius=0.2;
+				explosionShielding=0.5;
+				minimalHit=0.0099999998;
+				depends="HitFace max HitNeck";
+			};
+			class HitPelvis: HitHead
+			{
+				armor=8;
+				material=-1;
+				name="pelvis";
+				passThrough=0.80000001;
+				radius=0.23999999;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="";
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor=6;
+				material=-1;
+				name="spine1";
+				passThrough=0.80000001;
+				radius=0.16;
+				explosionShielding=3;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor=6;
+				material=-1;
+				name="spine2";
+				passThrough=0.33000001;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor=8;
+				material=-1;
+				name="spine3";
+				passThrough=0.33000001;
+				radius=0.18000001;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+			};
+			class HitBody: HitChest
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=6;
+				visual="injury_body";
+				minimalHit=0.0099999998;
+				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitBody
+			{
+				armor=6;
+				material=-1;
+				name="arms";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class HitHands: HitArms
+			{
+				armor=6;
+				material=-1;
+				name="hands";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding=1;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+				depends="HitArms";
+			};
+			class HitLegs: HitHands
+			{
+				armor=6;
+				material=-1;
+				name="legs";
+				passThrough=1;
+				radius=0.14;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+				depends="0";
+			};
+			class Incapacitated: HitLegs
+			{
+				armor=1000;
+				material=-1;
+				name="body";
+				passThrough=1;
+				radius=0;
+				explosionShielding=3;
+				visual="";
+				minimalHit=0;
+				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm
+			{
+				armor=6;
+				material=-1;
+				name="hand_l";
+				passThrough=1;
+				radius=0.079999998;
+				explosionShielding=3;
+				visual="injury_hands";
+				minimalHit=0.0099999998;
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name="hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor=6;
+				material=-1;
+				name="leg_l";
+				passThrough=1;
+				radius=0.1;
+				explosionShielding=3;
+				visual="injury_legs";
+				minimalHit=0.0099999998;
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name="leg_r";
+			};
+		};
+		armor=2;
+		armorStructural=4;
+		explosionShielding=0.40000001;
+		minTotalDamageThreshold=0.001;
+		impactDamageMultiplier=0.5;
 	};
-	class TAW4th_Trooper_Officer: SWLB_clone_base_P2
+	class TAW4th_Equipment_Trooper_Uniform_Officer: TAW4th_Equipment_Trooper_Uniform
 	{
 		author="TAW";
 		displayName="Clone Trooper Officer";
@@ -432,26 +844,21 @@ class CfgVehicles
 		scope=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack";
-		uniformclass="TAW4th_Equipment_Trooper_Uniform";
-		hiddenSelectionsTextures[]=
-		{
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Co.paa",
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Co.paa",
-		};
+		uniformclass="TAW4th_Equipment_Trooper_Uniform_Medic";
 		linkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_Commander",
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest_Officer2",
 		};
 		respawnLinkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_Commander",
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest_Officer2",
 		};
 	};
-	class TAW4th_Trooper_Medic: SWLB_clone_base_P2
+	class TAW4th_Equipment_Trooper_Uniform_Medic: TAW4th_Equipment_Trooper_Uniform
 	{
 		author="TAW";
 		displayName="Clone Trooper Medic";
@@ -468,43 +875,43 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 		respawnLinkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
+			"TAW4th_Equipment_Trooper_Visor_NVG",
 			"TAW4th_Equipment_Trooper_Helmet_Medic",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
-	class TAW4th_Trooper_Pilot: 3AS_Clone_P2_Pilot
+	class TAW4th_Equipment_Pilot_Uniform: 3AS_U_Republic_Pilot
 	{
 		author="TAW";
-		displayName="Clone Trooper Pilot";
+		displayName="Clone Pilot";
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack";
-		uniformclass="TAW4th_Equipment_Trooper_Uniform";
+		uniformclass="TAW4th_Equipment_Pilot_Uniform";
 		hiddenSelectionsTextures[]=
 		{
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Co.paa",
-			"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Pilot_Camo1_Co.paa",
+			"taw4th_community_pack\data\base\TAW4th_Equipment_Pilot_Camo2_Co.paa"
 		};
 		linkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
-			"TAW4th_Equipment_Trooper_Helmet",
-			"TAW4th_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_Visor_Rangefinder",
+			"TAW4th_Equipment_Pilot_Helmet",
+			"TAW4th_Equipment_Pilot_Vest",
 		};
 		respawnLinkedItems[]=
 		{
-			"TAW4th_Equipment_Trooper_NVG",
-			"TAW4th_Equipment_Trooper_Helmet",
-			"TAW4th_Equipment_Trooper_Vest",
+			"TAW4th_Equipment_Trooper_Visor_Rangefinder",
+			"TAW4th_Equipment_Pilot_Helmet",
+			"TAW4th_Equipment_Pilot_Vest",
 		};
 	};
 	

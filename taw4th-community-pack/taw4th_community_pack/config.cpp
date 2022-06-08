@@ -740,7 +740,7 @@ class CfgVehicles
 			};
 			class HitBody: HitChest
 			{
-				armor=1000;
+				armor=500;
 				material=-1;
 				name="body";
 				passThrough=1;
@@ -788,7 +788,7 @@ class CfgVehicles
 			};
 			class Incapacitated: HitLegs
 			{
-				armor=1000;
+				armor=500;
 				material=-1;
 				name="body";
 				passThrough=1;

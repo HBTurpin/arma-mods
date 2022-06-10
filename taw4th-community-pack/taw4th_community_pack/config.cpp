@@ -453,8 +453,9 @@ class CfgWeapons
 			mass=40;
 			vestType="Rebreather";
 		};
+		
 	};
-	class TAW4th_Equipment_Trooper_Uniform_Medic: SWLB_clone_uniform
+	class TAW4th_Equipment_Trooper_Uniform_Medic: TAW4th_Equipment_Trooper_Uniform
 	{
 	    author="TAW";
 		scope=2;
@@ -640,6 +641,7 @@ class CfgVehicles
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
+		scopeCurator=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack";
 		uniformclass="TAW4th_Equipment_Trooper_Uniform";
@@ -660,178 +662,9 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Helmet",
 			"TAW4th_Equipment_Trooper_Vest",
 		};
-		class HitPoints: HitPoints
-		{
-			class HitFace
-			{
-				armor=1;
-				material=-1;
-				name="face_hub";
-				passThrough=0.80000001;
-				radius=0.079999998;
-				explosionShielding=0.1;
-				minimalHit=0.0099999998;
-			};
-			class HitNeck: HitFace
-			{
-				armor=1;
-				material=-1;
-				name="neck";
-				passThrough=0.80000001;
-				radius=0.1;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-			};
-			class HitHead: HitNeck
-			{
-				armor=1;
-				material=-1;
-				name="head";
-				passThrough=0.80000001;
-				radius=0.2;
-				explosionShielding=0.5;
-				minimalHit=0.0099999998;
-				depends="HitFace max HitNeck";
-			};
-			class HitPelvis: HitHead
-			{
-				armor=8;
-				material=-1;
-				name="pelvis";
-				passThrough=0.80000001;
-				radius=0.23999999;
-				explosionShielding=3;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="";
-			};
-			class HitAbdomen: HitPelvis
-			{
-				armor=6;
-				material=-1;
-				name="spine1";
-				passThrough=0.80000001;
-				radius=0.16;
-				explosionShielding=3;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitDiaphragm: HitAbdomen
-			{
-				armor=6;
-				material=-1;
-				name="spine2";
-				passThrough=0.33000001;
-				radius=0.18000001;
-				explosionShielding=6;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitChest: HitDiaphragm
-			{
-				armor=8;
-				material=-1;
-				name="spine3";
-				passThrough=0.33000001;
-				radius=0.18000001;
-				explosionShielding=6;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-			};
-			class HitBody: HitChest
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=6;
-				visual="injury_body";
-				minimalHit=0.0099999998;
-				depends="HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms: HitBody
-			{
-				armor=6;
-				material=-1;
-				name="arms";
-				passThrough=1;
-				radius=0.1;
-				explosionShielding=3;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class HitHands: HitArms
-			{
-				armor=6;
-				material=-1;
-				name="hands";
-				passThrough=1;
-				radius=0.1;
-				explosionShielding=1;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-				depends="HitArms";
-			};
-			class HitLegs: HitHands
-			{
-				armor=6;
-				material=-1;
-				name="legs";
-				passThrough=1;
-				radius=0.14;
-				explosionShielding=3;
-				visual="injury_legs";
-				minimalHit=0.0099999998;
-				depends="0";
-			};
-			class Incapacitated: HitLegs
-			{
-				armor=1000;
-				material=-1;
-				name="body";
-				passThrough=1;
-				radius=0;
-				explosionShielding=3;
-				visual="";
-				minimalHit=0;
-				depends="(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
-			class HitLeftArm
-			{
-				armor=6;
-				material=-1;
-				name="hand_l";
-				passThrough=1;
-				radius=0.079999998;
-				explosionShielding=3;
-				visual="injury_hands";
-				minimalHit=0.0099999998;
-			};
-			class HitRightArm: HitLeftArm
-			{
-				name="hand_r";
-			};
-			class HitLeftLeg
-			{
-				armor=6;
-				material=-1;
-				name="leg_l";
-				passThrough=1;
-				radius=0.1;
-				explosionShielding=3;
-				visual="injury_legs";
-				minimalHit=0.0099999998;
-			};
-			class HitRightLeg: HitLeftLeg
-			{
-				name="leg_r";
-			};
-		};
-		armor=2;
-		armorStructural=4;
-		explosionShielding=0.40000001;
+		armor=5;
+		armorStructural=0;
+		explosionShielding=0.5;
 		minTotalDamageThreshold=0.001;
 		impactDamageMultiplier=0.5;
 	};
@@ -842,6 +675,7 @@ class CfgVehicles
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
+		scopeCurator=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack";
 		uniformclass="TAW4th_Equipment_Trooper_Uniform_Medic";
@@ -865,6 +699,7 @@ class CfgVehicles
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
+		scopeCurator=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack_Medic";
 		uniformclass="TAW4th_Equipment_Trooper_Uniform_Medic";
@@ -886,13 +721,14 @@ class CfgVehicles
 			"TAW4th_Equipment_Trooper_Vest",
 		};
 	};
-	class TAW4th_Equipment_Pilot_Uniform: 3AS_U_Republic_Pilot
+	class TAW4th_Equipment_Pilot_Uniform: 3AS_Clone_P2_Pilot
 	{
 		author="TAW";
 		displayName="Clone Pilot";
 		faction="TAW4th_Faction_Main";
 		editorSubcategory="TAW4th_Faction_Infantry";
 		scope=2;
+		scopeCurator=2;
 		side=1;
 		backpack="TAW4th_Equipment_Backpack";
 		uniformclass="TAW4th_Equipment_Pilot_Uniform";
@@ -952,6 +788,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="V-19 Torrent (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -979,6 +816,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="BTL-Y Wing (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -994,6 +832,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/C (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1008,6 +847,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/I Mk1 (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1025,6 +865,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/I Mk1 - Lights (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1042,6 +883,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/I Mk2 (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1059,6 +901,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/I Mk2 - Lights (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1076,6 +919,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="LAAT/LE 'Wasp' (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1198,6 +1042,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="ARC-170 (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1213,6 +1058,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="ARC-170 'Razor' (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1228,6 +1074,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="Z-95 Headhunter (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1243,6 +1090,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="TX-130 M1 (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1257,6 +1105,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="TX-130 M1 Recon (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1271,6 +1120,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="TX-130 M1 GL (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1285,6 +1135,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="TX-130 Super Saber (4th)";
 		scope=2;
+		scopeCurator=2;
 		crew="TAW4th_Trooper_Pilot";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1298,12 +1149,12 @@ class CfgVehicles
 	{
 		author="TAW";
 		mapSize=6.71;
-		scopecurator=2;
 		forceingarage=1;
 		displayname="BARC Speeder (4th)";
 		editorPreview="";
 		_generalMacro="B_MRAP_01_F";
 		scope=2;
+		scopecurator=2;
 		side=1;
 		faction="TAW4th_Faction_Main";
 		crew="TAW4th_Trooper";
@@ -1324,12 +1175,12 @@ class CfgVehicles
 	{
 		author="TAW";
 		mapSize=6.71;
-		scopecurator=2;
 		forceingarage=1;
 		displayname="BARC Speeder Sidecar (4th)";
 		editorPreview="";
 		_generalMacro="B_MRAP_01_F";
 		scope=2;
+		scopecurator=2;
 		side=1;
 		faction="TAW4th_Faction_Main";
 		crew="TAW4th_Trooper";
@@ -1353,6 +1204,7 @@ class CfgVehicles
 		author="TAW";
 		displayname="RTT (4th)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1370,6 +1222,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="AT-TE (4th) (WIP)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1388,6 +1241,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="AT-JT (4th) (WIP)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1406,6 +1260,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="AT-RT (4th) (WIP)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";
@@ -1415,6 +1270,7 @@ class CfgVehicles
 		author="TAW";
 		displayName="AT-AP (4th) (WIP)";
 		scope=2;
+		scopecurator=2;
 		crew="TAW4th_Trooper";
 		side=1;
 		faction="TAW4th_Faction_Main";

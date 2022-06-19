@@ -1,0 +1,14 @@
+name = "Carry";
+picture = "mod.JPG";
+actionName = "Website";
+action = "";
+description = "DYEL (Lite)";
+logo = "mod.JPG";
+logoOver = "mod.JPG";
+tooltip = "Carry";
+tooltipOwned = "";
+overview = "Carry";
+author = "Drongo";
+overviewPicture = "mod.JPG";
+overviewText = "Carry";
+overviewFootnote = "";

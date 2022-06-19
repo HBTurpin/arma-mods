@@ -24,6 +24,9 @@ class CfgPatches
 };
 class CfgAmmo
 {
+	class B_12Gauge_Pellets_Submunition;
+	
+	
 };
 class CfgMagazines
 {

@@ -32,18 +32,18 @@ class CfgMagazines
 {
 	class CA_Magazine;
 	class CA_LauncherMagazine;
-	class Titan_AT: CA_LauncherMagazine
-	{
-		mass=125;
-	};
-	class Titan_AP: CA_LauncherMagazine
-	{
-		mass=70;
-	};
-	class Titan_AA: CA_LauncherMagazine
-	{
-		mass=125;
-	};
+	//class Titan_AT: CA_LauncherMagazine
+	//{
+	//	mass=105;
+	//};
+	//class Titan_AP: CA_LauncherMagazine
+	//{
+	//	mass=70;
+	//};
+	//class Titan_AA: CA_LauncherMagazine
+	//{
+	//	mass=105;
+	//};
 };
 class CfgMagazineWells
 {
@@ -58,7 +58,7 @@ class CfgWeapons
 	class ItemcTab: ItemCore
 	{
 		mass=30;
-	};
+	}; 
 	class ItemMicroDAGR: ItemcTab
 	{
 		mass=5;

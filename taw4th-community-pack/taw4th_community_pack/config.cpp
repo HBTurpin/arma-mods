@@ -773,20 +773,11 @@ class CfgWeapons
             "taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Helmet_Medic_Co.paa",
         };
     };
-    class TAW4th_Equipment_Pilot_Helmet : SWLB_clone_pilot_P2_helmet
+    class TAW4th_Equipment_Pilot_Helmet : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         displayName = "Clone Pilot P2 Helmet (4th)";
         scope = 2;
-        class HitpointsProtectionInfo
-        {
-            class Head
-            {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
-            };
-        };
         hiddenSelections[] =
         {
             "camo1"
@@ -798,77 +789,41 @@ class CfgWeapons
     };
 
             //Custom Helmets//
-    class TAW4th_Equipment_Trooper_Helmet_C_Almerra : SWLB_clone_P2_helmet
+    class TAW4th_Equipment_Trooper_Helmet_C_Almerra : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         scope = 2;
         displayName = "Clone Trooper P2 Helmet (4th) [Almerra]";
-        class HitpointsProtectionInfo
-        {
-            class Head
-            {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
-            };
-        };
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
         };
     };
-    class TAW4th_Equipment_Trooper_Helmet_C_Laffey : SWLB_clone_P2_helmet
+    class TAW4th_Equipment_Trooper_Helmet_C_Laffey : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         scope = 2;
         displayName = "Clone Trooper P2 Helmet (4th) [Laffey]";
-        class HitpointsProtectionInfo
-        {
-            class Head
-            {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
-            };
-        };
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
         };
     };
-    class TAW4th_Equipment_Trooper_Helmet_C_HBTurpin : SWLB_clone_P2_helmet
+    class TAW4th_Equipment_Trooper_Helmet_C_HBTurpin : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         scope = 2;
         displayName = "Clone Trooper P2 Helmet (4th) [HBTurpin]";
-        class HitpointsProtectionInfo
-        {
-            class Head
-            {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
-            };
-        };
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
         };
     };
-	   class TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee : SWLB_clone_P2_helmet
+	  class TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         scope = 2;
         displayName = "Clone Trooper P2 Helmet (4th) [Dakiiiee]";
-        class HitpointsProtectionInfo
-        {
-            class Head
-            {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
-            };
-        };
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",

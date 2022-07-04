@@ -69,7 +69,9 @@ class cfgPatches
 
 			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
 			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
-			"TAW4th_Equipment_Trooper_Helmet_C_HBTurpin"
+			"TAW4th_Equipment_Trooper_Helmet_C_HBTurpin",
+			"TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee",
+			"TAW4th_Equipment_Trooper_Helmet_C_Fluffy"
 		};
 	};
 };
@@ -573,7 +575,7 @@ class CfgWeapons
             };
         };
         hiddenSelections[] ={"camo1","camo2"};
-        hiddenSelectionsTextures[] ={"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        hiddenSelectionsTextures[] ={"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa","taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
     };
     class TAW4th_Equipment_Trooper_Vest_Medic_Kama: JLTS_CloneVestAirborneNCO
     {
@@ -626,7 +628,8 @@ class CfgWeapons
             };
         };
         scope = 2;
-        hiddenSelectionsTextures[] ={"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_SideHolster_Co.paa","taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+		hiddenSelections[] ={"camo1","camo2"};
+        hiddenSelectionsTextures[] ={"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa","taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
     };
     class TAW4th_Equipment_Trooper_Vest_Holster : JLTS_CloneVestOfficer2
     {
@@ -819,7 +822,7 @@ class CfgWeapons
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
         };
     };
-	  class TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee : TAW4th_Equipment_Trooper_Helmet
+	 class TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee : TAW4th_Equipment_Trooper_Helmet
     {
         author = "TAW";
         scope = 2;
@@ -827,6 +830,16 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",
+        };
+    };
+	class TAW4th_Equipment_Trooper_Helmet_C_Fluffy : TAW4th_Equipment_Trooper_Helmet
+    {
+        author = "TAW";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Fluffy]";
+        hiddenSelectionsTextures[] =
+        {
+            "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Fluffy_Co.paa",
         };
     };
 };

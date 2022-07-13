@@ -1219,7 +1219,7 @@ class CfgVehicles
 		faction = "TAW4th_Faction";
 		editorSubcategory = "TAW4th_Troopers";
 		backpack = "TAW4th_Equipment_Backpack_JLTS";
-		uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+		uniformclass = "TAW4th_Equipment_Trooper_Uniform_Recruit";
 		hiddenSelectionsTextures[] = {"taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Upper_Recruit_Co.paa","taw4th_community_pack\data\base\TAW4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_Recruit","TAW4th_Equipment_Trooper_Vest_Recon",};
 		respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_Recruit","TAW4th_Equipment_Trooper_Vest_Recon",};
@@ -1332,7 +1332,7 @@ class CfgVehicles
 		faction = "TAW4th_Faction";
 		editorSubcategory = "TAW4th_Troopers_Woodland";
 		backpack = "TAW4th_Equipment_Backpack_JLTS";
-		uniformclass = "TAW4th_Equipment_Trooper_Uniform_Woodland";
+		uniformclass = "TAW4th_Equipment_Trooper_Uniform_Woodland_Recruit";
 		hiddenSelectionsTextures[] = {"taw4th_community_pack\data\base\woodland\TAW4th_Equipment_Trooper_Upper_Recruit_Co.paa","taw4th_community_pack\data\base\woodland\TAW4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"","TAW4th_Equipment_Trooper_Helmet_Woodland_Recruit","",};
 		respawnLinkedItems[] = {"","TAW4th_Equipment_Trooper_Helmet_Woodland_Recruit","",};
@@ -1858,10 +1858,10 @@ class CfgVehicles
             "taw4th_community_pack\data\vehicles\TAW4th_Vehicles_RTT_Co.paa"
         };
     };
-    class TAW4th_Vehicle_ATTE : 3as_ATTE_Base //MIDDLELEG NOT TEXTUREABLE, LOCATED IN P3D
+    class TAW4th_Vehicle_ATTE : 3as_ATTE_Base
     {
         author = "TAW";
-        displayName = "AT-TE (WIP)";
+        displayName = "AT-TE";
         scope = 2;
         scopecurator = 2;
         crew = "TAW4th_Equipment_Trooper_Armour";

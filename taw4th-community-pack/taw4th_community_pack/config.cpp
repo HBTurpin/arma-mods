@@ -1585,7 +1585,6 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         forceInGarage = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
         radarTargetSize = 0.2;
         visualTargetSize = 0.2;

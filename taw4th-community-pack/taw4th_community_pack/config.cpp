@@ -111,6 +111,8 @@ class cfgPatches
 			"TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee",
 			"TAW4th_Equipment_Trooper_Helmet_C_Fluffy",
 			"TAW4th_Equipment_Trooper_Helmet_C_Kaede"
+            "TAW4th_Equipment_Trooper_Helmet_C_Tucc",
+            "TAW4th_Equipment_Trooper_Helmet_C_Bearskylls",
 		};
 	};
 };

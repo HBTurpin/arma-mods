@@ -1122,6 +1122,16 @@ class CfgWeapons
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_BearSkylls_Co.paa",
         };
     };
+    class TAW4th_Equipment_Trooper_Helmet_C_Tucc : TAW4th_Equipment_Trooper_Helmet
+    {
+        author = "TAW";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Tucc]";
+        hiddenSelectionsTextures[] =
+        {
+            "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
+        };
+    };
 };
 
 

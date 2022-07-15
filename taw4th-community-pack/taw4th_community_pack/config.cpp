@@ -113,6 +113,7 @@ class cfgPatches
 			"TAW4th_Equipment_Trooper_Helmet_C_Kaede"
             "TAW4th_Equipment_Trooper_Helmet_C_Tucc",
             "TAW4th_Equipment_Trooper_Helmet_C_Bearskylls",
+            "TAW4th_Equipment_Trooper_Helmet_C_Limnades",
 		};
 	};
 };
@@ -1132,6 +1133,16 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
+        };
+    };
+    class TAW4th_Equipment_Trooper_Helmet_C_Limnades : TAW4th_Equipment_Trooper_Helmet
+    {
+        author = "TAW";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Limnades]";
+        hiddenSelectionsTextures[] =
+        {
+            "taw4th_community_pack\data\customs\TAW4th_Equipment_Trooper_Helmet_Limnades_Co.paa",
         };
     };
 };

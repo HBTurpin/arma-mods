@@ -111,6 +111,11 @@ class CfgEditorSubcategories
 	{
 		displayName = "4th Infantry (Woodland)";
 	};
+
+    class TAW4th_Custom_Troopers
+    {
+        displayName = "4th Customs";
+    };
 };
 
 class CfgWeapons
@@ -291,8 +296,8 @@ class CfgWeapons
             vestType = "Rebreather";
         };
     };
-    class TAW4th_Equipment_Pilot_Uniform : 3AS_U_Pilot_Phase3{
-
+    class TAW4th_Equipment_Pilot_Uniform : 3AS_U_Pilot_Phase3
+    {
         author = "TAW";
         scope = 2;
         displayName = "Clone Pilot Armour (4th)";
@@ -322,8 +327,8 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class 3AS_Pilot_Vest: ItemCore{
-
+    class 3AS_Pilot_Vest: ItemCore
+    {
         class ItemInfo;
     };
     class JLTS_CloneVestAirborneNCO: ItemCore
@@ -610,8 +615,8 @@ class CfgWeapons
             "taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Vest_Officer2_Co.paa",
         };
     };
-    class TAW4th_Equipment_Pilot_Vest : 3AS_Pilot_Vest{
-
+    class TAW4th_Equipment_Pilot_Vest : 3AS_Pilot_Vest
+    {
         author = "TAW";
         displayName = "Clone Pilot Vest (4th)";
         class ItemInfo : ItemInfo
@@ -1302,8 +1307,8 @@ class CfgVehicles
         linkedItems[]={"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_Medic","TAW4th_Equipment_Trooper_Vest","Throw","Put"};
         respawnLinkedItems[]={"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_Medic","TAW4th_Equipment_Trooper_Vest","Throw","Put"};
     };
-    class TAW4th_Equipment_Pilot_Armour : 3AS_Clone_P2_Pilot{
-
+    class TAW4th_Equipment_Pilot_Armour : 3AS_Clone_P2_Pilot
+    {
         author = "TAW";
         scope = 2;
         scopeCurator = 2;
@@ -1399,4 +1404,150 @@ class CfgVehicles
 		linkedItems[] = {"","TAW4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 		respawnLinkedItems[] = {"","TAW4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 	};
+
+            //Custom Units//
+    class TAW4th_Equipment_Trooper_Laffey: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Laffeyyy";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS_RTO";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Rangefinder","TAW4th_Equipment_Trooper_Helmet_C_Laffey","TAW4th_Equipment_Trooper_Vest_Officer_B","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Rangefinder","TAW4th_Equipment_Trooper_Helmet_C_Laffey","TAW4th_Equipment_Trooper_Vest_Officer_B","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_Almerra: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Almerra";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS_RTO";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Commander","TAW4th_Equipment_Trooper_Helmet_C_Almerra","TAW4th_Equipment_Trooper_Vest_ARC_B","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Commander","TAW4th_Equipment_Trooper_Helmet_C_Almerra","TAW4th_Equipment_Trooper_Vest_ARC_B","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_HBTurpin: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "HBTurpin";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_HBTurpin","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_HBTurpin","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_Dakiiiee: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Dakiiiee";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Commander","TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee","TAW4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Commander","TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee","TAW4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_FluffyFlyBoy: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Fluffyflyboy";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Fluffy","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Fluffy","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_Kaede: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Kaede";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Kaede","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Kaede","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_BearSkylls: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "BearSkylls";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_BearSkylls","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_BearSkylls","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_Tucc: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Tucc";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Rangefinder","TAW4th_Equipment_Trooper_Helmet_C_Tucc","TAW4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_Rangefinder","TAW4th_Equipment_Trooper_Helmet_C_Tucc","TAW4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+    };
+    class TAW4th_Equipment_Trooper_Limnades: TAW4th_Equipment_Armour_Base
+    {
+        author = "TAW";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Limnades";
+        faction = "TAW4th_Faction";
+        editorSubcategory = "TAW4th_Custom_Troopers";
+        backpack = "TAW4th_Equipment_Backpack_JLTS";
+        uniformclass = "TAW4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Upper_Clean_Co.paa","taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Limnades","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"TAW4th_Equipment_Trooper_Visor_NVG","TAW4th_Equipment_Trooper_Helmet_C_Limnades","TAW4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
 };

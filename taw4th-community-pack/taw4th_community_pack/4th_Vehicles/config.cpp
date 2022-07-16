@@ -82,7 +82,7 @@ class CfgVehicles
     class 3as_ATJT_Base;
     class 3AS_ATRT;
     class 3as_ATAP_base;
-
+                 //BOMBERS//
     class TAW4th_Vehicle_V19 : 3as_V19_base{
         author = "TAW";
         displayName = "V-19 Torrent";
@@ -127,6 +127,7 @@ class CfgVehicles
             "3as\3as_btlb\data\interior_co.paa"
         };
     };
+                 //LAAT//
     class TAW4th_Vehicle_LAATC : 3AS_LAATC{
         author = "TAW";
         displayName = "LAAT/C";
@@ -136,6 +137,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\4th_Vehicles\data\vehicles\TAW4th_Vehicles_LAATC_0_Co.paa",
@@ -151,6 +153,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\4th_Vehicles\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
@@ -169,6 +172,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\4th_Vehicles\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
@@ -187,6 +191,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\4th_Vehicles\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
@@ -205,6 +210,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
             "taw4th_community_pack\4th_Vehicles\data\vehicles\TAW4th_Vehicles_LAATI_Hull_Co.paa",
@@ -223,6 +229,7 @@ class CfgVehicles
         side = 1;
         faction = "TAW4th_Faction";
         editorSubcategory = "TAW4th_Vehicles";
+        ace_cargo_space = 50;
         forceInGarage = 2;
         scopeArsenal = 2;
         radarTargetSize = 0.2;
@@ -336,6 +343,7 @@ class CfgVehicles
             };
         };
     };
+               //FIGHTERS//
     class TAW4th_Vehicle_ARC170 : 3as_arc_170_base{
         author = "TAW";
         displayName = "ARC-170";
@@ -384,6 +392,7 @@ class CfgVehicles
             "3AS\3as_saber\data\glass\glass_ca"
         };
     };
+                //GROUND//
     class TAW4th_Vehicle_TX130_M1 : 3as_saber_m1{
         author = "TAW";
         displayName = "TX-130 M1";

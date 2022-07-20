@@ -1001,6 +1001,7 @@ class CfgWeapons
         author = "TAW";
         displayName = "Clone Pilot P2 Helmet (4th)";
         scope = 2;
+        ace_hearing_lowerVolume = 0.60;
 		class HitpointsProtectionInfo
         {
             class Head
@@ -1132,7 +1133,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		side = 1;
-		displayName = "Clone Trooper";
+		displayName = "Clone Trooper Recruit";
 		faction = "TAW4th_Faction";
 		editorSubcategory = "TAW4th_Troopers";
 		backpack = "TAW4th_Equipment_Backpack_JLTS";

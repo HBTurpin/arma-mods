@@ -1,150 +1,293 @@
-//                                                                                                        //4th Customs Config//
-//class cfgPatches
-//{
-//	class TAW4th_Equipment
-//	{
-//		author = "TAW";
-//		weapons[] =
-//		{			
-//			"TAW4th_Equipment_Trooper_Helmet_C_Almerra",
-//			"TAW4th_Equipment_Trooper_Helmet_C_Laffey",
-//			"TAW4th_Equipment_Trooper_Helmet_C_HBTurpin",
-//			"TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee",
-//			"TAW4th_Equipment_Trooper_Helmet_C_Fluffy",
-//			"TAW4th_Equipment_Trooper_Helmet_C_Kaede",
-//            "TAW4th_Equipment_Trooper_Helmet_C_Tucc",
-//            "TAW4th_Equipment_Trooper_Helmet_C_Bearskylls",
-//            "TAW4th_Equipment_Trooper_Helmet_C_Limnades",
-//		};
-//	};
-//};
-//
-//class cfgFactionClasses
-//{
-//    class TAW4th_Faction
-//    {
-//        displayName = "[TAW] 4th Platoon Customs";  // Name on ingame menus
-//        //side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
-//    };
-//};
-//
-//class CfgWeapons
-//{
-//             //Helmets//
-//    class ItemCore;
-//    class SWLB_clone_P2_helmet : ItemCore
-//    {
-//        class ItemInfo;
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet : SWLB_clone_P2_helmet
-//    {
-//        author = "TAW";
-//        displayName = "Clone Trooper P2 Helmet (4th)";
-//        scope = 2;
-//		 class HitpointsProtectionInfo
-//        {
-//            class Head
-//            {
-//                hitPointName = "HitHead";
-//                armor = 15;
-//                passThrough = 0.5;
-//            };
-//        };
-//		hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Base\data\base\TAW4th_Equipment_Trooper_Helmet_Clean_Co.paa",
-//        };
-//    };
-//
-//            //Custom Helmets//
-//    class TAW4th_Equipment_Trooper_Helmet_C_Almerra : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Almerra]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
-//        };
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet_C_Laffey : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Laffey]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
-//        };
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet_C_HBTurpin : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [HBTurpin]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
-//        };
-//    };
-//	class TAW4th_Equipment_Trooper_Helmet_C_Dakiiiee : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Dakiiiee]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",
-//        };
-//    };
-//	class TAW4th_Equipment_Trooper_Helmet_C_Fluffy : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Fluffy]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Fluffy_Co.paa",
-//        };
-//    };
-//	class TAW4th_Equipment_Trooper_Helmet_C_Kaede : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Kaede]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Kaede_Co.paa",
-//        };
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet_C_BearSkylls : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [BearSkylls]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_BearSkylls_Co.paa",
-//        };
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet_C_Tucc : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Tucc]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
-//        };
-//    };
-//    class TAW4th_Equipment_Trooper_Helmet_C_Limnades : TAW4th_Equipment_Trooper_Helmet
-//    {
-//        author = "TAW";
-//        scope = 2;
-//        displayName = "Clone Trooper P2 Helmet (4th) [Limnades]";
-//        hiddenSelectionsTextures[] =
-//        {
-//            "taw4th_community_pack\4th_Customs\data\customs\TAW4th_Equipment_Trooper_Helmet_Limnades_Co.paa",
-//        };
-//    };
-//};
+                                                                                                        4th Customs Config
+class cfgPatches
+{
+	class GEG4th_Customs
+	{
+		author = "GEG";
+		units[] =
+		{
+            "GEG4th_Equipment_Trooper_C_Laffey",
+            "GEG4th_Equipment_Trooper_C_Almerra",
+            "GEG4th_Equipment_Trooper_C_HBTurpin",
+            "GEG4th_Equipment_Trooper_C_Dakiiiee",
+            "GEG4th_Equipment_Trooper_C_FluffyFlyBoy",
+            "GEG4th_Equipment_Trooper_C_Kaede",
+            "GEG4th_Equipment_Trooper_C_BearSkylls",
+            "GEG4th_Equipment_Trooper_C_Tucc",
+            "GEG4th_Equipment_Trooper_C_Limnades",
+		};
+		weapons[] =
+		{			
+			"GEG4th_Equipment_Trooper_Helmet_C_Almerra",
+			"GEG4th_Equipment_Trooper_Helmet_C_Laffey",
+			"GEG4th_Equipment_Trooper_Helmet_C_HBTurpin",
+			"GEG4th_Equipment_Trooper_Helmet_C_Dakiiiee",
+			"GEG4th_Equipment_Trooper_Helmet_C_Fluffy",
+			"GEG4th_Equipment_Trooper_Helmet_C_Kaede",
+			"GEG4th_Equipment_Trooper_Helmet_C_Tucc",
+			"GEG4th_Equipment_Trooper_Helmet_C_Bearskylls",
+			"GEG4th_Equipment_Trooper_Helmet_C_Limnades"
+		};
+	};
+};
+
+class cfgFactionClasses
+{
+	class GEG4th_Faction;
+};
+class CfgEditorSubcategories
+{
+    class GEG4th_Troopers_Customs
+    {
+        displayName = "4th Infantry (Customs)";
+    };
+};
+
+
+class CfgWeapons
+{
+    class GEG4th_Equipment_Trooper_Helmet;
+
+    class GEG4th_Equipment_Trooper_Helmet_C_Almerra : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Almerra]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
+        };
+    };
+    class GEG4th_Equipment_Trooper_Helmet_C_Laffey : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Laffey]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
+        };
+    };
+    class GEG4th_Equipment_Trooper_Helmet_C_HBTurpin : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [HBTurpin]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
+        };
+    };
+	class GEG4th_Equipment_Trooper_Helmet_C_Dakiiiee : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Dakiiiee]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",
+        };
+    };
+	class GEG4th_Equipment_Trooper_Helmet_C_Fluffy : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Fluffy]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Fluffy_Co.paa",
+        };
+    };
+	class GEG4th_Equipment_Trooper_Helmet_C_Kaede : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Kaede]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Kaede_Co.paa",
+        };
+    };
+    class GEG4th_Equipment_Trooper_Helmet_C_BearSkylls : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [BearSkylls]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_BearSkylls_Co.paa",
+        };
+    };
+    class GEG4th_Equipment_Trooper_Helmet_C_Tucc : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Tucc]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
+        };
+    };
+    class GEG4th_Equipment_Trooper_Helmet_C_Limnades : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        scope = 2;
+        displayName = "Clone Trooper P2 Helmet (4th) [Limnades]";
+        hiddenSelectionsTextures[] =
+        {
+            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Limnades_Co.paa",
+        };
+    };
+};
+
+
+
+
+class CfgVehicles
+{
+	class GEG4th_Equipment_Armour_Base;
+    class GEG4th_Equipment_Trooper_C_Laffey: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Laffeyyy";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS_RTO";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Trooper_Helmet_C_Laffey","GEG4th_Equipment_Trooper_Vest_Officer_B","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Trooper_Helmet_C_Laffey","GEG4th_Equipment_Trooper_Vest_Officer_B","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_Almerra: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Almerra";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS_RTO";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Commander","GEG4th_Equipment_Trooper_Helmet_C_Almerra","GEG4th_Equipment_Trooper_Vest_ARC_B","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Commander","GEG4th_Equipment_Trooper_Helmet_C_Almerra","GEG4th_Equipment_Trooper_Vest_ARC_B","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_HBTurpin: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "HBTurpin";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_HBTurpin","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_HBTurpin","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_Dakiiiee: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Dakiiiee";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Commander","GEG4th_Equipment_Trooper_Helmet_C_Dakiiiee","GEG4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Commander","GEG4th_Equipment_Trooper_Helmet_C_Dakiiiee","GEG4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_FluffyFlyBoy: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Fluffyflyboy";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Fluffy","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Fluffy","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_Kaede: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Kaede";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Kaede","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Kaede","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_BearSkylls: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "BearSkylls";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_BearSkylls","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_BearSkylls","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_Tucc: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Tucc";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Trooper_Helmet_C_Tucc","GEG4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Trooper_Helmet_C_Tucc","GEG4th_Equipment_Trooper_Vest_ARC_A","Throw","Put"};
+    };
+    class GEG4th_Equipment_Trooper_C_Limnades: GEG4th_Equipment_Armour_Base
+    {
+        author = "GEG";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        side = 1;
+        displayName = "Limnades";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Troopers_Customs";
+        backpack = "GEG4th_Equipment_Backpack_JLTS";
+        uniformclass = "GEG4th_Equipment_Trooper_Uniform";
+        hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\base\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+        linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Limnades","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+        respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_C_Limnades","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
+    };
+};

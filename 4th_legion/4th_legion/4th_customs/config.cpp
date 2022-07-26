@@ -1,4 +1,3 @@
-                                                                                                        4th Customs Config
 class cfgPatches
 {
 	class GEG4th_Customs
@@ -26,7 +25,7 @@ class cfgPatches
 			"GEG4th_Equipment_Trooper_Helmet_C_Kaede",
 			"GEG4th_Equipment_Trooper_Helmet_C_Tucc",
 			"GEG4th_Equipment_Trooper_Helmet_C_Bearskylls",
-			"GEG4th_Equipment_Trooper_Helmet_C_Limnades"
+			"GEG4th_Equipment_Trooper_Helmet_C_Limnades",
 		};
 	};
 };

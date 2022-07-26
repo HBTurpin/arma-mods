@@ -71,7 +71,7 @@ class cfgPatches
 	};
 };
 
-                //FACTIONS//
+//FACTIONS//
 class cfgFactionClasses
 {
 	class GEG4th_Faction
@@ -286,7 +286,7 @@ class CfgWeapons
         };
     };
 
-                 //Vests//
+    //Vests//
     class VestItem;
     class ItemCore;
     class SWLB_clone_recon_armor: ItemCore

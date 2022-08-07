@@ -54,7 +54,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Almerra]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Almerra_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_C_Laffey : GEG4th_Equipment_Trooper_Helmet
@@ -64,7 +64,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Laffey]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Laffey_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_C_HBTurpin : GEG4th_Equipment_Trooper_Helmet
@@ -74,7 +74,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [HBTurpin]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_HBTurpin_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_C_Dakiiiee : GEG4th_Equipment_Trooper_Helmet
@@ -84,7 +84,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Dakiiiee]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Dakiiiee_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_C_Fluffy : GEG4th_Equipment_Trooper_Helmet
@@ -94,7 +94,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Fluffy]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Fluffy_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Fluffy_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_C_Kaede : GEG4th_Equipment_Trooper_Helmet
@@ -104,7 +104,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Kaede]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Kaede_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Kaede_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_C_BearSkylls : GEG4th_Equipment_Trooper_Helmet
@@ -114,7 +114,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [BearSkylls]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_BearSkylls_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_BearSkylls_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_C_Tucc : GEG4th_Equipment_Trooper_Helmet
@@ -124,7 +124,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Tucc]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Tucc_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_C_Limnades : GEG4th_Equipment_Trooper_Helmet
@@ -134,7 +134,7 @@ class CfgWeapons
         displayName = "Clone Trooper P2 Helmet (4th) [Limnades]";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Limnades_Co.paa",
+            "4th_customs\data\customs\GEG4th_Equipment_Trooper_Helmet_Limnades_Co.paa",
         };
     };
 };

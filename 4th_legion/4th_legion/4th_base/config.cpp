@@ -366,7 +366,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Co.paa"
         };
     };
     class GEG4th_Equipment_Trooper_Vest_ARC_A : SWLB_clone_arc_armor
@@ -421,7 +421,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa"
         };
     };
     class GEG4th_Equipment_Trooper_Vest_ARC_B : SWLB_clone_arc_armor
@@ -476,7 +476,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa"
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Officer_A : SWLB_clone_officer_armor
@@ -531,7 +531,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Officer_B : SWLB_clone_officer_armor
@@ -586,7 +586,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa",
         };
     };
     class GEG4th_Equipment_Pilot_Vest : 3AS_Pilot_Vest
@@ -645,7 +645,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Vest_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Pilot_Vest_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Medic: JLTS_CloneVestAirborneNCO
@@ -699,7 +699,7 @@ class CfgWeapons
             };
         };
         hiddenSelections[] ={"camo1","camo2"};
-        hiddenSelectionsTextures[] ={"","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        hiddenSelectionsTextures[] ={"","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
     };
     class GEG4th_Equipment_Trooper_Vest_Medic_Kama: JLTS_CloneVestAirborneNCO
     {
@@ -753,7 +753,7 @@ class CfgWeapons
         };
         scope = 2;
 		hiddenSelections[] ={"camo1","camo2"};
-        hiddenSelectionsTextures[] ={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        hiddenSelectionsTextures[] ={"4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
     };
     class GEG4th_Equipment_Trooper_Vest_Holster : JLTS_CloneVestOfficer2
     {
@@ -808,7 +808,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa"
         };
     };
 
@@ -823,7 +823,7 @@ class CfgWeapons
         scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_NVG_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_NVG_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Visor_Rangefinder : lsd_gar_rangefinder_nvg
@@ -837,7 +837,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Visor_Commander : lsd_gar_p2Commander_nvg
@@ -847,7 +847,7 @@ class CfgWeapons
         scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Commander_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Commander_Co.paa",
         };
     };
 
@@ -877,7 +877,7 @@ class CfgWeapons
         };
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Recruit : GEG4th_Equipment_Trooper_Helmet
@@ -887,7 +887,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Dirt : GEG4th_Equipment_Trooper_Helmet
@@ -897,7 +897,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_DirtScratch : GEG4th_Equipment_Trooper_Helmet
@@ -907,7 +907,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Scratch : GEG4th_Equipment_Trooper_Helmet
@@ -917,7 +917,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Woodland : GEG4th_Equipment_Trooper_Helmet
@@ -927,7 +927,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit : GEG4th_Equipment_Trooper_Helmet
@@ -937,7 +937,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt : GEG4th_Equipment_Trooper_Helmet
@@ -947,7 +947,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch : GEG4th_Equipment_Trooper_Helmet
@@ -957,7 +957,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
         };
     };
 	class GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch : GEG4th_Equipment_Trooper_Helmet
@@ -967,7 +967,7 @@ class CfgWeapons
         scope = 2;
 		hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_Medic : GEG4th_Equipment_Trooper_Helmet
@@ -977,7 +977,7 @@ class CfgWeapons
         scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Medic_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Medic_Co.paa",
         };
     };
     class GEG4th_Equipment_Pilot_Helmet : SWLB_clone_pilot_P2_helmet
@@ -1001,7 +1001,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Helmet_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Pilot_Helmet_Co.paa",
         };
     };
          
@@ -1021,8 +1021,8 @@ class CfgVehicles
         displayName = "Clone Trooper Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
         };
     };
     class GEG4th_Equipment_Backpack_Medic : SWLB_clone_backpack
@@ -1032,8 +1032,8 @@ class CfgVehicles
         displayName = "Clone Trooper Medic Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
         };
     };
     class GEG4th_Equipment_Backpack_JLTS : JLTS_Clone_backpack
@@ -1043,7 +1043,7 @@ class CfgVehicles
         displayName = "Clone Trooper Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Co.paa"
         };
     };
     class GEG4th_Equipment_Backpack_JLTS_RTO : JLTS_Clone_backpack_RTO
@@ -1055,7 +1055,7 @@ class CfgVehicles
         tf_range = 50000;
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_RTO_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_RTO_Co.paa"
         };
     };
     class GEG4th_Equipment_Backpack_JLTS_Medic : JLTS_Clone_backpack
@@ -1065,7 +1065,7 @@ class CfgVehicles
         displayName = "Clone Trooper Medic Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Medic_Co.paa"
+            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Medic_Co.paa"
         };
     };
 
@@ -1085,7 +1085,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Uniform_Base";
-		hiddenSelectionsTextures[] = { "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Co.paa"};
+		hiddenSelectionsTextures[] = { "4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Co.paa"};
 		linkedItems[] = { "GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
 		respawnLinkedItems[] = { "GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest","Throw", "Put"};
 
@@ -1107,7 +1107,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1123,7 +1123,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Recruit";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Recruit","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Recruit","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1139,7 +1139,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Dirt";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Dirt","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Dirt","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1155,7 +1155,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_DirtScratch";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_DirtScratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_DirtScratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1171,7 +1171,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Scratch";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Scratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Scratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1187,7 +1187,7 @@ class CfgVehicles
         editorSubcategory= "GEG4th_Troopers";
         backpack= "GEG4th_Equipment_Backpack_JLTS";
         uniformclass= "GEG4th_Equipment_Trooper_Uniform_Medic";
-        hiddenSelectionsTextures[]={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Medic_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Medic_Co.paa"};
+        hiddenSelectionsTextures[]={"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Medic_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Medic_Co.paa"};
         linkedItems[]={"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Medic","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
         respawnLinkedItems[]={"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Medic","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
     };
@@ -1203,7 +1203,7 @@ class CfgVehicles
         editorSubcategory = "GEG4th_Troopers";
 		backpack="GEG4th_Equipment_Backpack_JLTS";
 		uniformclass="GEG4th_Equipment_Pilot_Uniform";
-		hiddenSelectionsTextures[]={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo1_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo2_Co.paa"};
+		hiddenSelectionsTextures[]={"4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo1_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo2_Co.paa"};
 		linkedItems[]={"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Pilot_Helmet","GEG4th_Equipment_Pilot_Vest","Throw","Put"};
 		respawnLinkedItems[]={"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Pilot_Helmet","GEG4th_Equipment_Pilot_Vest","Throw","Put"};
 	};
@@ -1220,7 +1220,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland","Throw","Put"};
 	};
@@ -1236,7 +1236,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Recruit";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit","Throw","Put"};
 	};
@@ -1252,7 +1252,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Dirt";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt","Throw","Put"};
 	};
@@ -1268,7 +1268,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_DirtScratch";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch","Throw","Put"};
 	};
@@ -1284,7 +1284,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Scratch";
-		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 	};

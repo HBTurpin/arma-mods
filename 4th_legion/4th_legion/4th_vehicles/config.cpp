@@ -1,10 +1,9 @@
-                                                                                                        //4th Base Config//
+                                                                                                        //4th Vehicles Config//
 class cfgPatches
 {
-	class 4th_Aux_Vehicles
+	class GEG4th_Vehicle
 	{
-		name = "4th Legion Aux - Units";
-		author = "4th_Aux_Team";
+        author = "GEG";
 		units[] =
 		{
             "GEG4th_Vehicle_V19",
@@ -28,23 +27,23 @@ class cfgPatches
             "GEG4th_Vehicle_ATTE",
             "GEG4th_Vehicle_ATJT",
             "GEG4th_Vehicle_ATRT",
-            "GEG4th_Vehicle_ATAP"
+            "GEG4th_Vehicle_ATAP",
 		};
 	};
 };
 
 class CfgFactionClasses
 {
-	class 4th_Legion;
+	class GEG4th_Faction;
 };
 
 class CfgEditorCategories
 {
-	class 4th_resupply;
+	class GEG4th_Resupply;
 };
 class CfgEditorSubcategories
 {
-    class 4th_vehicles
+    class GEG4th_Vehicles
     {
         displayName = "4th Vehicles";
     };
@@ -59,13 +58,34 @@ class CfgVehicles
 
     class 3as_V19_base;
     class 3AS_BTLB_Bomber;
-    class 3AS_LAATC;
-    class 3as_laat_Base;
-    class 3as_LAAT_Mk1;
-    class 3as_LAAT_Mk1Lights;
-    class 3as_LAAT_Mk2;
-    class 3as_LAAT_Mk2Lights;
-    class 3AS_Patrol_LAAT_Base;
+    class 3AS_LAATC
+    {
+        class ACE_SelfActions;
+    };
+    class 3as_laat_Base
+    {
+        class ACE_SelfActions;
+    };
+    class 3as_LAAT_Mk1
+    {
+        class ACE_SelfActions;
+    };
+    class 3as_LAAT_Mk1Lights
+    {
+        class ACE_SelfActions;
+    };
+    class 3as_LAAT_Mk2
+    {
+        class ACE_SelfActions;
+    };
+    class 3as_LAAT_Mk2Lights
+    {
+        class ACE_SelfActions;
+    };
+    class 3AS_Patrol_LAAT_Base
+    {
+        class ACE_SelfActions;
+    };
     class 3as_Z95_base;
     class 3as_arc_170_base;
     class 3as_saber_m1;
@@ -84,11 +104,11 @@ class CfgVehicles
         author = "GEG";
         displayName = "V-19 Torrent";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselections[] =
         {
             "camo1",
@@ -100,12 +120,12 @@ class CfgVehicles
         };
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Wings_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Wing Plates_co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Hull_co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_GunGear_co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Wings_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Wing Plates_co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Hull_co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_GunGear_co.paa",
             "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Pizzlepit_co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_V19_Pizzlepit_co.paa"
         };
     };
 	
@@ -113,14 +133,14 @@ class CfgVehicles
         author = "GEG";
         displayName = "BTL-Y Wing";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_BTLB_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_BTLB_Co.paa",
             "3as\3as_btlb\data\detail_co.paa",
             "3as\3as_btlb\data\interior_co.paa"
         };
@@ -130,16 +150,17 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/C";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
-        ace_cargo_space = 150;
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
+        ace_cargo_space = 200;
+        ace_cargo_hasCargo = 1;
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATC_0_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATC_1_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATC_0_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATC_1_Co.paa"
         };
     };
 	
@@ -147,19 +168,20 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/I Mk1";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
-        ace_cargo_space = 150;
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
+        ace_cargo_space = 200;
+        ace_cargo_hasCargo = 1;
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
         };
     };
 	
@@ -167,19 +189,20 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/I Mk1 - Lights";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
-        ace_cargo_space = 150;
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
+        ace_cargo_space = 200;
+        ace_cargo_hasCargo = 1;
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
         };
     };
 	
@@ -187,19 +210,19 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/I Mk2";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
         };
     };
 	
@@ -207,19 +230,19 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/I Mk2 - Lights";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         ace_cargo_space = 150;
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Wings_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapons_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Weapon_Details_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATI_Interior_Co.paa"
         };
     };
 	
@@ -227,11 +250,11 @@ class CfgVehicles
         author = "GEG";
         displayName = "LAAT/LE 'Wasp'";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         ace_cargo_space = 50;
         forceInGarage = 2;
         scopeArsenal = 2;
@@ -244,7 +267,7 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATLE_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_LAATLE_Co.paa"
         };
         class TransportBackpacks
         {
@@ -319,16 +342,16 @@ class CfgVehicles
         author = "GEG";
         displayName = "ARC-170";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Frame_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Engine_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Guns_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Frame_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Engine_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Guns_Co.paa"
         };
     };
 	
@@ -337,15 +360,15 @@ class CfgVehicles
         displayName = "ARC-170 'Razor'";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Frame_Razor_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Engine_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Guns_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Frame_Razor_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Engine_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ARC170_Guns_Co.paa"
         };
     };
 	
@@ -354,13 +377,13 @@ class CfgVehicles
         displayName = "Z-95 Headhunter";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_Z95_Body_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_Z95_Body_Co.paa",
             "3AS\3as_Z95\Data\cockpit_co.paa",
             "3AS\3as_saber\data\glass\glass_ca"
         };
@@ -371,14 +394,14 @@ class CfgVehicles
         displayName = "TX-130 M1";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Weapon_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Weapon_Co.paa"
         };
     };
     class GEG4th_Vehicle_TX130_M1Recon : 3as_saber_m1Recon{
@@ -386,14 +409,14 @@ class CfgVehicles
         displayName = "TX-130 M1 Recon";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_WeaponScout_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_WeaponScout_Co.paa"
         };
     };
 	
@@ -402,14 +425,14 @@ class CfgVehicles
         displayName = "TX-130 M1 GL";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_WeaponGMG_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_WeaponGMG_Co.paa"
         };
     };
 	
@@ -418,14 +441,14 @@ class CfgVehicles
         displayName = "TX-130 Super Saber";
         scope = 2;
         scopeCurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Weapon_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_TX130_Weapon_Co.paa"
         };
     };
 	
@@ -437,11 +460,11 @@ class CfgVehicles
         editorPreview = "";
         _generalMacro = "B_MRAP_01_F";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         typicalCargo[] =
         {
             "GEG4th_Trooper"
@@ -452,7 +475,7 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Co.paa"
         };
     };
 	
@@ -464,11 +487,11 @@ class CfgVehicles
         editorPreview = "";
         _generalMacro = "B_MRAP_01_F";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         typicalCargo[] =
         {
             "GEG4th_Trooper"
@@ -480,8 +503,8 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Side_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_BARC_Side_Co.paa"
         };
     };
 	
@@ -489,18 +512,18 @@ class CfgVehicles
         author = "GEG";
         displayname = "RTT";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenSelections[] =
         {
             "camo1"
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_RTT_Co.paa"
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_RTT_Co.paa"
         };
     };
 	
@@ -508,19 +531,19 @@ class CfgVehicles
         author = "GEG";
         displayName = "AT-TE";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Chasis_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Cockpit_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Turrets_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Underpiping_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_MiddleLeg_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Chasis_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Cockpit_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Turrets_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Underpiping_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_MiddleLeg_Co.paa",
         };
     };
 	
@@ -528,19 +551,19 @@ class CfgVehicles
         author = "GEG";
         displayName = "AT-JT (WIP)";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
         hiddenselectionstextures[] =
         {
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Hull_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Chasis_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Cockpit_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Turrets_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Underpiping_Co.paa",
-            "4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_MiddleLeg_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Hull_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Chasis_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Cockpit_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Turrets_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_Underpiping_Co.paa",
+            "4th_legion\4th_vehicles\data\vehicles\GEG4th_Vehicles_ATTE_MiddleLeg_Co.paa",
         };
     };
 	
@@ -548,22 +571,22 @@ class CfgVehicles
         author = "GEG";
         displayName = "AT-RT (WIP)";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
     };
 	
     class GEG4th_Vehicle_ATAP : 3as_ATAP_base{ //THESE AREN'T TEXTUREABLE AT THE MOMENT AS IS ALL IN P3D FILE
         author = "GEG";
         displayName = "AT-AP (WIP)";
         scope = 2;
-        scopecurator = 2;
-        crew = "4th_Clone_P2_cx_c";
+        scopeCurator = 2;
+        crew = "GEG4th_Equipment_Trooper_Armour";
         side = 1;
-        faction = "4th_Legion";
-        editorSubcategory = "4th_vehicles";
+        faction = "GEG4th_Faction";
+        editorSubcategory = "GEG4th_Vehicles";
     };
 	
 };

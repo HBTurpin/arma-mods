@@ -77,8 +77,12 @@ class cfgFactionClasses
 	class GEG4th_Faction
 	{
 		displayName = "[GEG] 4th Legion";  
-		//side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
+		side = 1; // Opfor = 0, Blufor = 1, Indep = 2.
 	};
+};
+class CfgEditorCategories
+{
+    class 4th_resupply;
 };
 class CfgEditorSubcategories
 {
@@ -89,7 +93,12 @@ class CfgEditorSubcategories
 	class GEG4th_Troopers_Woodland
 	{
 		displayName = "4th Infantry [Woodland]";
+
 	};
+    //class GEG4th_Vehicles
+    //{
+    //    displayName = "4th Vehicles";
+    //};
 };
 
 class CfgWeapons
@@ -103,16 +112,17 @@ class CfgWeapons
     class GEG4th_Equipment_Uniform_Base : SWLB_clone_uniform
     {
         author = "GEG";
-        displayName = "Clone Trooper Armor Base (4th)";
-        scope = 0;
+        scope = 2;
+        displayName = "DO NOT USE Clone Trooper P2 Base DO NOT USE";
         class ItemInfo : UniformItem
         {
-            uniformModel = "-";
+            hiddenSelections[] = { "camo1" };
+            mass = 10;
+            uniformModel = "\SWLB_clones\swlb_clone_uniform.p3d";
             uniformClass = "GEG4th_Equipment_Armour_Base";
             containerClass = "Supply200";
             uniformType = "Neopren";
             vestType = "Rebreather";
-            mass = 10;
         };
     };
     class GEG4th_Equipment_Trooper_Uniform : GEG4th_Equipment_Uniform_Base
@@ -128,8 +138,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Clean";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Recruit : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Recruit : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Recruit)";
         scope = 2;
@@ -142,8 +157,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Recruit";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Dirt : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Dirt : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Dirty)";
         scope = 2;
@@ -156,8 +176,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Dirt";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_DirtScratch : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_DirtScratch : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Dirty & Scratched)";
         scope = 2;
@@ -170,10 +195,15 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Dirt_Scratched";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Scratch : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Scratch : GEG4th_Equipment_Uniform_Base
     {
-        displayName = "Clone Trooper Armor (4th) (Scratched)";
+        displayName = "Clone Trooper Armor (4th) (Dirty & Scratched)";
         scope = 2;
         class ItemInfo : UniformItem
         {
@@ -184,8 +214,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Scratched";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Woodland : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Woodland : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Woodland)";
         scope = 2;
@@ -198,8 +233,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor_wood";
+            camo = "Clean";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Woodland_Recruit : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Woodland_Recruit : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Woodland) (Recruit)";
         scope = 2;
@@ -212,8 +252,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor_wood";
+            camo = "Recruit";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Woodland_Dirt : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Woodland_Dirt : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Woodland) (Dirty)";
         scope = 2;
@@ -226,8 +271,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor_wood";
+            camo = "Dirt";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Woodland_DirtScratch : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Woodland_DirtScratch : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Woodland) (Dirty & Scratched)";
         scope = 2;
@@ -240,8 +290,13 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor_wood";
+            camo = "Dirt_Scratched";
+        };
     };
-	class GEG4th_Equipment_Trooper_Uniform_Woodland_Scratch : GEG4th_Equipment_Uniform_Base
+    class GEG4th_Equipment_Trooper_Uniform_Woodland_Scratch : GEG4th_Equipment_Uniform_Base
     {
         displayName = "Clone Trooper Armor (4th) (Woodland) (Scratched)";
         scope = 2;
@@ -254,20 +309,29 @@ class CfgWeapons
             vestType = "Rebreather";
             mass = 10;
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor_wood";
+            camo = "Scratched";
+        };
     };
     class GEG4th_Equipment_Trooper_Uniform_Medic : GEG4th_Equipment_Trooper_Uniform
     {
-        author = "GEG";
-        scope = 2;
         displayName = "Clone Trooper Medic Armor (4th)";
+        scope = 2;
         class ItemInfo : UniformItem
         {
-            uniformType = "Neopren";
             uniformModel = "-";
             uniformClass = "GEG4th_Equipment_Trooper_Armour_Medic";
-            containerClass = "Supply150";
-            mass = 10;
+            containerClass = "Supply200";
+            uniformType = "Neopren";
             vestType = "Rebreather";
+            mass = 10;
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Medic";
         };
     };
     class GEG4th_Equipment_Pilot_Uniform : 3AS_U_Pilot_Phase3
@@ -283,6 +347,11 @@ class CfgWeapons
             containerClass = "Supply150";
             mass = 10;
             vestType = "Rebreather";
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneArmor";
+            camo = "Pilot";
         };
     };
 
@@ -366,7 +435,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Recon";
         };
     };
     class GEG4th_Equipment_Trooper_Vest_ARC_A : SWLB_clone_arc_armor
@@ -421,7 +495,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Arc_A";
         };
     };
     class GEG4th_Equipment_Trooper_Vest_ARC_B : SWLB_clone_arc_armor
@@ -476,7 +555,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_ARC_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Arc_B";
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Officer_A : SWLB_clone_officer_armor
@@ -531,7 +615,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Officer_A";
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Officer_B : SWLB_clone_officer_armor
@@ -586,7 +675,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Officer2_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Officer_B";
         };
     };
     class GEG4th_Equipment_Pilot_Vest : 3AS_Pilot_Vest
@@ -645,13 +739,20 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Pilot_Vest_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Vest_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Pilot";
         };
     };
     class GEG4th_Equipment_Trooper_Vest_Medic: JLTS_CloneVestAirborneNCO
     {
         displayName="Clone Medic Vest (4th)";
         author="GEG";
+        hiddenSelections[] = { "camo1","camo2" };
+        hiddenSelectionsTextures[] = { "","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa" };
         class ItemInfo : ItemInfo
         {
             vestType = "Rebreather";
@@ -698,8 +799,11 @@ class CfgWeapons
                 };
             };
         };
-        hiddenSelections[] ={"camo1","camo2"};
-        hiddenSelectionsTextures[] ={"","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Medic";
+        };
     };
     class GEG4th_Equipment_Trooper_Vest_Medic_Kama: JLTS_CloneVestAirborneNCO
     {
@@ -753,7 +857,12 @@ class CfgWeapons
         };
         scope = 2;
 		hiddenSelections[] ={"camo1","camo2"};
-        hiddenSelectionsTextures[] ={"4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        hiddenSelectionsTextures[] ={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Vest_Medic2_Co.paa"};
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Medic_K";
+        };
     };
     class GEG4th_Equipment_Trooper_Vest_Holster : JLTS_CloneVestOfficer2
     {
@@ -808,7 +917,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_SideHolster_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneVest";
+            camo = "Holster";
         };
     };
 
@@ -823,7 +937,12 @@ class CfgWeapons
         scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_NVG_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_NVG_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneNVG";
+            camo = "Visor";
         };
     };
     class GEG4th_Equipment_Trooper_Visor_Rangefinder : lsd_gar_rangefinder_nvg
@@ -837,7 +956,12 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Rangefinder_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneNVG";
+            camo = "RangeFinder";
         };
     };
     class GEG4th_Equipment_Trooper_Visor_Commander : lsd_gar_p2Commander_nvg
@@ -847,12 +971,18 @@ class CfgWeapons
         scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Commander_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Visor_Commander_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneNVG";
+            camo = "Visor_Command";
         };
     };
 
 
              //Helmets//
+    class HeadgearItem;
     class SWLB_clone_P2_helmet : ItemCore
     {
         class ItemInfo;
@@ -864,120 +994,177 @@ class CfgWeapons
     class GEG4th_Equipment_Trooper_Helmet : SWLB_clone_P2_helmet
     {
         author = "GEG";
-        displayName = "Clone Trooper P2 Helmet (4th)";
-        scope = 2;
-		 class HitpointsProtectionInfo
+        displayName = "DO NOT USE Clone Trooper P2 Helmet DO NOT USE";
+        class ItemInfo : HeadgearItem
         {
-            class Head
+            hiddenSelections[] = {"camo1"};
+            mass = 10;
+            uniformModel = "\SWLB_clones\SWLB_clone_P2_helmet.p3d";
+            class HitpointsProtectionInfo
             {
-                hitPointName = "HitHead";
-                armor = 15;
-                passThrough = 0.5;
+                class Head
+                {
+                    armor = 15;
+                    hitpointName = "HitHead";
+                    passThrough = 0.5;
+                };
             };
         };
-		hiddenSelectionsTextures[] =
+        ace_hearing_protection = 0.8;
+        ace_hearing_lowerVolume = 0.5;
+    };
+    class GEG4th_Equipment_Trooper_Helmet_Shiny : GEG4th_Equipment_Trooper_Helmet
+    {
+        author = "GEG";
+        displayName = "Clone Trooper P2 Helmet (4th) (CLean)";
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Clean";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Recruit : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Recruit : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Recruit)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Recruit";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Dirt : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Dirt : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Dirty)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Dirt";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_DirtScratch : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_DirtScratch : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Dirty & Scratched)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Dirt_Scratched";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Scratch : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Scratch : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Scratched)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Scratched";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Woodland : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Woodland : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Woodland)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Clean_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2_wood";
+            camo = "Clean";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
-        displayName = "Clone Trooper P2 Helmet (4th) (Woodland)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        displayName = "Clone Trooper P2 Helmet (4th) (Woodland Recruit)";
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Recruit_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2_wood";
+            camo = "Recruit";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
-        displayName = "Clone Trooper P2 Helmet (4th) (Woodland) (Dirty)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        displayName = "Clone Trooper P2 Helmet (4th) (Woodland) (Dirty Dirt)";
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Dirt_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2_wood";
+            camo = "Dirt";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
-        displayName = "Clone Trooper P2 Helmet (4th) (Woodland) (Dirty & Scratched)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        displayName = "Clone Trooper P2 Helmet (4th) (Woodland) (Dirty Scratched)";
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_DirtScratch_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2_wood";
+            camo = "Dirt_Scratched";
         };
     };
-	class GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch : GEG4th_Equipment_Trooper_Helmet
+    class GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Woodland) (Scratched)";
-        scope = 2;
-		hiddenSelectionsTextures[] =
+        hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+            "4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Helmet_Scratch_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2_wood";
+            camo = "Scratched";
         };
     };
     class GEG4th_Equipment_Trooper_Helmet_Medic : GEG4th_Equipment_Trooper_Helmet
     {
         author = "GEG";
         displayName = "Clone Trooper P2 Helmet (4th) (Medic)";
-        scope = 2;
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Medic_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Helmet_Medic_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2";
+            camo = "Medic";
         };
     };
     class GEG4th_Equipment_Pilot_Helmet : SWLB_clone_pilot_P2_helmet
@@ -985,7 +1172,6 @@ class CfgWeapons
         author = "GEG";
         displayName = "Clone Pilot P2 Helmet (4th)";
         scope = 2;
-        //ace_hearing_lowerVolume = 0.60;//
 		class HitpointsProtectionInfo
         {
             class Head
@@ -1001,8 +1187,15 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Pilot_Helmet_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Helmet_Co.paa",
         };
+        class XtdGearInfo
+        {
+            model = "4th_CloneHelmetP2Pilot";
+            camo = "Pilot";
+        };
+        ace_hearing_protection = 0.8;
+        ace_hearing_lowerVolume = 0.5;
     };
          
 };
@@ -1021,8 +1214,13 @@ class CfgVehicles
         displayName = "Clone Trooper Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneBackpack";
+            camo = "Trooper_A";
         };
     };
     class GEG4th_Equipment_Backpack_Medic : SWLB_clone_backpack
@@ -1032,8 +1230,13 @@ class CfgVehicles
         displayName = "Clone Trooper Medic Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_Co.paa",
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneBackpack";
+            camo = "Medic_A";
         };
     };
     class GEG4th_Equipment_Backpack_JLTS : JLTS_Clone_backpack
@@ -1043,7 +1246,12 @@ class CfgVehicles
         displayName = "Clone Trooper Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneBackpack";
+            camo = "Trooper_B";
         };
     };
     class GEG4th_Equipment_Backpack_JLTS_RTO : JLTS_Clone_backpack_RTO
@@ -1055,7 +1263,12 @@ class CfgVehicles
         tf_range = 50000;
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_RTO_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_RTO_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneBackpack";
+            camo = "RTO";
         };
     };
     class GEG4th_Equipment_Backpack_JLTS_Medic : JLTS_Clone_backpack
@@ -1065,7 +1278,12 @@ class CfgVehicles
         displayName = "Clone Trooper Medic Backpack (4th)";
         hiddenSelectionsTextures[] =
         {
-            "4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Medic_Co.paa"
+            "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Backpack_JLTS_Medic_Co.paa"
+        };
+        class XtdGearInfo
+        {
+            model = "4th_CloneBackpack";
+            camo = "Medic_B";
         };
     };
 
@@ -1085,7 +1303,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Uniform_Base";
-		hiddenSelectionsTextures[] = { "4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Co.paa"};
+		hiddenSelectionsTextures[] = { "4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Co.paa"};
 		linkedItems[] = { "GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
 		respawnLinkedItems[] = { "GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest","Throw", "Put"};
 
@@ -1107,7 +1325,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1123,7 +1341,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Recruit";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Recruit","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Recruit","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1139,7 +1357,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Dirt";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Dirt","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Dirt","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1155,7 +1373,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_DirtScratch";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_DirtScratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_DirtScratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1171,7 +1389,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Scratch";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
 		linkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Scratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 		respawnLinkedItems[] = {"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Scratch","GEG4th_Equipment_Trooper_Vest_Recon","Throw","Put"};
 	};
@@ -1187,7 +1405,7 @@ class CfgVehicles
         editorSubcategory= "GEG4th_Troopers";
         backpack= "GEG4th_Equipment_Backpack_JLTS";
         uniformclass= "GEG4th_Equipment_Trooper_Uniform_Medic";
-        hiddenSelectionsTextures[]={"4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Medic_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Medic_Co.paa"};
+        hiddenSelectionsTextures[]={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Upper_Medic_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Trooper_Lower_Medic_Co.paa"};
         linkedItems[]={"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Medic","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
         respawnLinkedItems[]={"GEG4th_Equipment_Trooper_Visor_NVG","GEG4th_Equipment_Trooper_Helmet_Medic","GEG4th_Equipment_Trooper_Vest","Throw","Put"};
     };
@@ -1203,7 +1421,7 @@ class CfgVehicles
         editorSubcategory = "GEG4th_Troopers";
 		backpack="GEG4th_Equipment_Backpack_JLTS";
 		uniformclass="GEG4th_Equipment_Pilot_Uniform";
-		hiddenSelectionsTextures[]={"4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo1_Co.paa","4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo2_Co.paa"};
+		hiddenSelectionsTextures[]={"4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo1_Co.paa","4th_legion\4th_base\data\equipment\GEG4th_Equipment_Pilot_Camo2_Co.paa"};
 		linkedItems[]={"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Pilot_Helmet","GEG4th_Equipment_Pilot_Vest","Throw","Put"};
 		respawnLinkedItems[]={"GEG4th_Equipment_Trooper_Visor_Rangefinder","GEG4th_Equipment_Pilot_Helmet","GEG4th_Equipment_Pilot_Vest","Throw","Put"};
 	};
@@ -1220,7 +1438,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Clean_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Clean_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland","Throw","Put"};
 	};
@@ -1236,7 +1454,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Recruit";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Recruit_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Recruit_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Recruit","Throw","Put"};
 	};
@@ -1252,7 +1470,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Dirt";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Dirt_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Dirt_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Dirt","Throw","Put"};
 	};
@@ -1268,7 +1486,7 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_DirtScratch";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_DirtScratch_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_DirtScratch_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_DirtScratch","Throw","Put"};
 	};
@@ -1284,8 +1502,266 @@ class CfgVehicles
 		editorSubcategory = "GEG4th_Troopers_Woodland";
 		backpack = "GEG4th_Equipment_Backpack_JLTS";
 		uniformclass = "GEG4th_Equipment_Trooper_Uniform_Woodland_Scratch";
-		hiddenSelectionsTextures[] = {"4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
+		hiddenSelectionsTextures[] = {"4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Upper_Scratch_Co.paa","4th_legion\4th_base\data\equipment\woodland\GEG4th_Equipment_Trooper_Lower_Scratch_Co.paa",};
 		linkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 		respawnLinkedItems[] = {"","GEG4th_Equipment_Trooper_Helmet_Woodland_Scratch","Throw","Put"};
 	};
+};
+class XtdGearModels
+{
+    class CfgWeapons
+    {
+        class 4th_CloneHelmetP2
+        {
+            label = "Clone Trooper Helmet";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Clean","Recruit","Dirt","Scratched","Dirt_Scratched","Medic"}; // All class names
+                class Clean // Camo value from Item
+                {
+                    label = "Clean"; // Value for Arsenal
+                };
+                class Recruit
+                {
+                    label = "Recruit";
+                };
+                class Dirt
+                {
+                    label = "Dirt";
+                };
+                class Scratched
+                {
+                    label = "Scratched";
+                };
+                class Dirt_Scratched
+                {
+                    label = "Dirt_Scratched";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                };
+            };
+        };
+        class 4th_CloneHelmetP2_wood
+        {
+            label = "Clone Trooper Helmet Wood";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Clean","Recruit","Dirt","Scratched","Dirt_Scratched","Medic"}; // All class names
+                class Clean // Camo value from Item
+                {
+                    label = "Clean"; // Value for Arsenal
+                };
+                class Recruit
+                {
+                    label = "Recruit";
+                };
+                class Dirt
+                {
+                    label = "Dirt";
+                };
+                class Scratched
+                {
+                    label = "Scratched";
+                };
+                class Dirt_Scratched
+                {
+                    label = "Dirt_Scratched";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                };
+                class Pilot
+                {
+                    label = "Pilot";
+                };
+            };
+        };
+        class 4th_CloneArmor
+        {
+            label = "Clone Trooper Armor";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Clean","Recruit","Dirt","Scratched","Dirt_Scratched","Medic"}; // All class names
+                class Clean // Camo value from Item
+                {
+                    label = "Clean"; // Value for Arsenal
+                };
+                class Recruit
+                {
+                    label = "Recruit";
+                };
+                class Dirt
+                {
+                    label = "Dirt";
+                };
+                class Scratched
+                {
+                    label = "Scratched";
+                };
+                class Dirt_Scratched
+                {
+                    label = "Dirt_Scratched";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                };
+                class Pilot
+                {
+                    label = "Pilot";
+                };
+            };
+        };
+        class 4th_CloneArmor_wood
+        {
+            label = "Clone Trooper Armor";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Clean","Recruit","Dirt","Scratched","Dirt_Scratched","Medic"}; // All class names
+                class Clean // Camo value from Item
+                {
+                    label = "Clean"; // Value for Arsenal
+                };
+                class Recruit
+                {
+                    label = "Recruit";
+                };
+                class Dirt
+                {
+                    label = "Dirt";
+                };
+                class Scratched
+                {
+                    label = "Scratched";
+                };
+                class Dirt_Scratched
+                {
+                    label = "Dirt_Scratched";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                };
+            };
+        };
+        class 4th_CloneVest
+        {
+            label = "Clone Trooper Vests";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Recon","Arc_A","Arc_B","Officer_A","Officer_B","Pilot","Medic","Medic_K","Holster"}; // All class names
+                class Recon // Camo value from Item
+                {
+                    label = "Recon"; // Value for Arsenal
+                };
+                class Arc_A
+                {
+                    label = "Arc A";
+                };
+                class Arc_B
+                {
+                    label = "Arc B";
+                };
+                class Officer_A
+                {
+                    label = "Officer A";
+                };
+                class Officer_B
+                {
+                    label = "Officer B";
+                };
+                class Pilot
+                {
+                    label = "Pilot";
+                };
+                class Medic
+                {
+                    label = "Medic";
+                };
+                class Medic_K
+                {
+                    label = "Medic [K]";
+                };
+                class Holster
+                {
+                    label = "Holster";
+                };
+            };
+        };
+        class 4th_CloneNVG
+        {
+            label = "Clone Trooper Visor";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Visor","RangeFinder","Visor_Command"}; // All class names
+                class Visor // Camo value from Item
+                {
+                    label = "Visor"; // Value for Arsenal
+                };
+                class RangeFinder
+                {
+                    label = "RangeFinder";
+                };
+                class Visor_Command
+                {
+                    label = "Visor Command";
+                };
+            };
+        };
+    };
+    class CfgVehicles
+    {
+        class 4th_CloneBackpack
+        {
+            label = "Clone Trooper Backpack";
+            author = "4th_Aux_Team";
+            options[] = {"camo"};
+            class camo
+            {
+                changeingame = 0;
+                values[] = {"Trooper_A","Medic_A","Trooper_B","Medic_B","RTO"}; // All class names
+                class Trooper_A // Camo value from Item
+                {
+                    label = "Trooper A"; // Value for Arsenal
+                };
+                class Medic_A
+                {
+                    label = "Medic A";
+                };
+                class Trooper_B
+                {
+                    label = "Trooper B";
+                };
+                class Medic_B
+                {
+                    label = "Medic B";
+                };
+                class RTO
+                {
+                    label = "RTO";
+                };
+            };
+        };
+    };
 };

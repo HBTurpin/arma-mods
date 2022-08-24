@@ -1,5 +1,5 @@
-name = "Good Evening Gamers | 2nd Battalion";
+name = "Good Evening Gamers | 2nd Battlaion";
 overview = "";
 action = "";
-logo = "logo.png";
+logo = "";
 logoOver = "";
